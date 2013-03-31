@@ -1,13 +1,13 @@
 <?php
 
 //Load stylesheets
-function load-styles() {
+function load_styles() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style( 'app', get_template_directory_uri() . '/stylesheets/app.css' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/stylesheets/normalize.css' );
 }
 
-add_action( 'wp_enqueue_scripts', 'load-styles' );
+add_action( 'wp_enqueue_scripts', 'load_styles' );
 
 //Load javascripts
 //Enqueued scripts will be loaded on all pages.  Registered scripts can be enqueued by their handles wherever needed.
