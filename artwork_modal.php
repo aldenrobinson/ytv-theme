@@ -1,3 +1,8 @@
+<?php
+	wp_enqueue_script('app');
+	wp_enqueue_script('foundation'); 
+	wp_enqueue_script('reveal'); 
+?>
 <?php rewind_posts(); ?>
 <?php while( have_posts() ) : the_post(); ?>
 	

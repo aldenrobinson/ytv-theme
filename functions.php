@@ -18,7 +18,7 @@ function load_scripts() {
 		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '');
 		wp_enqueue_script('jquery');
 	}
-	wp_enqueue_script( 'app', get_template_directory_uri() . '/javascripts/app.js', array('jquery', 'foundation'), '', true ); //This includes the custom code required for Foundation. 
+	wp_register_script( 'app', get_template_directory_uri() . '/javascripts/app.js', array('jquery', 'foundation'), '', true ); //This includes the custom code required for Foundation. 
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/javascripts/vendor/custom.modernizr.js' ); //This includes the HTML5 shim. Must load in header.
 	//wp_register_script( 'zepto', get_template_directory_uri() . '/javascripts/vendor/zepto.js' ); //Zepto.  Not using this for now...just going with jQuery because some plugins will need it anyway.
 	wp_register_script( 'foundation', get_template_directory_uri() . '/javascripts/foundation/foundation.js', array('jquery'), '', true ); //This is required to load along with any plugins below. This is not the minified version of all the plugins a la some other versions of Foundation.
@@ -36,8 +36,9 @@ function load_scripts() {
 	wp_register_script( 'tooltips', get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js', array('jquery') );
 	wp_register_script( 'topbar', get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', array('jquery') );
 	//Okay, now call those of the above registered scripts that you want to use throughout the site.  If you have one that will load on only one template, call it there instead. For example:
-	wp_enqueue_script('foundation'); 
-	wp_enqueue_script('reveal'); 
+	//wp_enqueue_script('app');
+	//wp_enqueue_script('foundation'); 
+	//wp_enqueue_script('reveal'); 
 	}
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
