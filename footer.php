@@ -18,7 +18,7 @@
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
 	<?php //Load the image popups if a gallery page.
-		if( is_post_type_archive('artwork') ) {
+		if( is_tax('collection') ) {
 		get_template_part('artwork_modal');
 	} ?>
 <?php wp_footer(); ?>
