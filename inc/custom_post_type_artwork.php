@@ -20,18 +20,18 @@ function create_artwork_post_type() {
 
 function artwork_taxonomy() {  
    register_taxonomy(  
-    'artwork_type',  
+    'collection',  
     'artwork',  
     array(  
         'hierarchical' => true,  
-        'label' => 'Artwork',  
+        'label' => 'Collection',  
         'query_var' => true,  
         'show_ui' => true,
-        'rewrite' => array('slug' => 'artwork_type')  
+        'rewrite' => array('slug' => 'collection')  
 		)  
 	);  
 } 
 
-//add_action( 'init', 'artwork_taxonomy' );
+add_action( 'init', 'artwork_taxonomy' );
 
 ?>
