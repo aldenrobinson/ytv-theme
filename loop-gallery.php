@@ -16,7 +16,7 @@
 				</a>
 			</li>
 		<?php endwhile; else: ?>
-		<?php _e('Sorry, there is nothing to display'); ?>
+		<?php _e('Sorry, there is nothing to display here.'); ?>
 		<?php endif; ?>
 	</ul>
 </section>

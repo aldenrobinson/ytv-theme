@@ -24,7 +24,7 @@ function artwork_taxonomy() {
     'artwork',  
     array(  
         'hierarchical' => true,  
-        'label' => 'Gallery',  
+        'label' => 'Artwork',  
         'query_var' => true,  
         'show_ui' => true,
         'rewrite' => array('slug' => 'artwork_type')  
