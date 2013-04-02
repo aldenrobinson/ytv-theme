@@ -12,7 +12,7 @@ function create_artwork_post_type() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'artwork', 'with_front' => FALSE ),
       'show_in_nav_menus' => true,
-      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' )
       //'menu_icon' => get_template_directory_uri() . '/paintings_icon.png',
       )
   );
@@ -32,6 +32,6 @@ function artwork_taxonomy() {
 	);  
 } 
 
-add_action( 'init', 'artwork_taxonomy' );
+//add_action( 'init', 'artwork_taxonomy' );
 
 ?>
