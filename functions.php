@@ -55,42 +55,16 @@ add_theme_support( 'custom-header' );
 //Make the TinyMCE editor text look nice
 add_editor_style();
 
-//Create post type "appearances"
-function create_appearance_post_type() {
-  register_post_type( 'appearance',
-    array(
-      'labels' => array(
-		      'name' => __( 'Appearances' ),
-		      'singular_name' => __( 'Appearance' )
-		  ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'appearances'),
-      'show_in_nav_menus' => true,
-      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' )
-      )
-  );
-}
-//Uncomment below to create post type
-//add_action( 'init', 'create_appearance_post_type' );
 
-// Register Sidebar
-function generic_sidebar()  {
-	$args = array(
-		'id'            => 'generic',
-		'name'          => __( 'Generic Sidebar'),
-		'description'   => __( 'Sidebar for dates and index pages'),
-		'before_title'  => '<h6 class=\"widgettitle\">',
-		'after_title'   => '</h6>',
-		'before_widget' => '<li id=\"%1$s\" class=\"widget %2$s\">',
-		'after_widget'  => '</li>',
-	);
 
-	register_sidebar( $args );
-}
+//generic sidebar
+require( get_template_directory() .'/inc/generic_sidebar.php' );
 
-//Uncomment below to register sidebar for realz.
-//add_action( 'widgets_init', 'generic_sidebar' );
+//appearances post type
+//require( get_template_directory() .'/inc/custom_post_type_appearances.php' );
+
+//gallery post type + taxonomy
+//require( get_template_directory() .'/inc/custom_post_type_artwork.php' );
 
 //custom boxes
 //require( get_template_directory() . '/inc/custom_boxes.php' );
