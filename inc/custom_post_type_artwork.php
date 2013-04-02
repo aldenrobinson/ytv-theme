@@ -18,6 +18,8 @@ function create_artwork_post_type() {
   );
 }
 
+//In the below, be careful of using "reserved words" --> http://codex.wordpress.org/Function_Reference/register_taxonomy#Reserved_Terms
+//Also, when making changes, make sure to toggle Permalink type.  
 function artwork_taxonomy() {  
    register_taxonomy(  
     'collection',  
