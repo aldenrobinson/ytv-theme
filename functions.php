@@ -61,10 +61,10 @@ add_editor_style();
 require( get_template_directory() .'/inc/generic_sidebar.php' );
 
 //appearances post type
-//require( get_template_directory() .'/inc/custom_post_type_appearances.php' );
+require( get_template_directory() .'/inc/custom_post_type_appearances.php' );
 
 //gallery post type + taxonomy
-//require( get_template_directory() .'/inc/custom_post_type_artwork.php' );
+require( get_template_directory() .'/inc/custom_post_type_artwork.php' );
 
 //custom boxes
 //require( get_template_directory() . '/inc/custom_boxes.php' );
