@@ -1,5 +1,5 @@
 <?php
-Create post type "appearances"
+//Create post type "appearances"
 function create_appearance_post_type() {
   register_post_type( 'appearance',
     array(
