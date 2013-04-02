@@ -16,7 +16,7 @@
 				</a>
 			</li>
 		<?php endwhile; else: ?>
-		<?php _e('Sorry, there is nothing to display here.'); ?>
+		<?php _e('Sorry, there is nothing to display. This is the Gallery Loop.'); ?>
 		<?php endif; ?>
 	</ul>
 </section>

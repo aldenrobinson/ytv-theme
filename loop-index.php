@@ -8,6 +8,6 @@
 		}
 		the_content();
 		endwhile; else:
-			echo 'Sorry, there is nothing to display.';
+			echo 'Sorry, there is nothing to display. This is the Index Loop. ';
 	endif; ?>
 </section>
