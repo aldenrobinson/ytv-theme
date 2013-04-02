@@ -27,7 +27,7 @@ function artwork_taxonomy() {
         'label' => 'Gallery',  
         'query_var' => true,  
         'show_ui' => true,
-        'rewrite' => array('slug' => 'artwork')  
+        'rewrite' => array('slug' => 'artwork_type')  
 		)  
 	);  
 } 
