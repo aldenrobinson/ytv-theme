@@ -37,8 +37,9 @@ function load_scripts() {
 	wp_register_script( 'topbar', get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', array('jquery') );
 	//Okay, now call those of the above registered scripts that you want to use throughout the site.  If you have one that will load on only one template, call it there instead. For example:
 	//wp_enqueue_script('app');
-	//wp_enqueue_script('foundation'); 
-	//wp_enqueue_script('reveal'); 
+	wp_enqueue_script('foundation'); 
+	wp_enqueue_script('reveal'); 
+	wp_enqueue_script('orbit'); 
 	}
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
