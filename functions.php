@@ -29,46 +29,92 @@ function load_scripts() {
 	wp_register_script( 'forms', get_template_directory_uri() . '/javascripts/foundation/foundation.forms.js', array('jquery') );
 	wp_register_script( 'joyride', get_template_directory_uri() . '/javascripts/foundation/foundation.joyride.js', array('jquery') );
 	wp_register_script( 'magellan', get_template_directory_uri() . '/javascripts/foundation/foundation.magellan.js', array('jquery') );
-	wp_register_script( 'orbit', get_template_directory_uri() . '/javascripts/foundation/foundation.orbit.js', array('jquery') );
+	wp_register_script( 'orbit', get_template_directory_uri() . '/javascripts/foundation/foundation.orbit.js', array('jquery', 'foundation'), '', true );
 	wp_register_script( 'placeholder', get_template_directory_uri() . '/javascripts/foundation/foundation.placeholder.js', array('jquery') );
 	wp_register_script( 'reveal', get_template_directory_uri() . '/javascripts/foundation/foundation.reveal.js', array('jquery', 'foundation'), '', true );
 	wp_register_script( 'section', get_template_directory_uri() . '/javascripts/foundation/foundation.section.js', array('jquery') );
 	wp_register_script( 'tooltips', get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js', array('jquery') );
 	wp_register_script( 'topbar', get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', array('jquery') );
 	//Okay, now call those of the above registered scripts that you want to use throughout the site.  If you have one that will load on only one template, call it there instead. For example:
-	//wp_enqueue_script('app');
+	wp_enqueue_script('app');
 	wp_enqueue_script('foundation'); 
 	wp_enqueue_script('reveal'); 
-	wp_enqueue_script('orbit'); 
+	//wp_enqueue_script('orbit'); 
+	wp_enqueue_script('section'); 
+	wp_enqueue_script('forms'); 
 	}
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-//Register nav menus
-register_nav_menu( 'Main', 'Main Menu' );
-register_nav_menu( 'footer', 'Footer Menu' );
+//Call Top Bar Walker functions https://gist.github.com/awshout/3943026
+require( get_template_directory() . '/inc/foundation-topbar-menu.php' );
+require( get_template_directory() . '/inc/foundation-topbar-walker.php' );
+
+//Register nav menus THIS IS OVERRIDDEN BY THE ABOVE
+//register_nav_menu( 'Main', 'Main Menu' );
+//register_nav_menu( 'footer', 'Footer Menu' );
 
 //Add thumbnail support
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'highlightslide', 400, 300, true ); 
 
 //Add custom header support.  To call in theme, add <img src="[php tag] header_image(); [close php]"> where desired.
-add_theme_support( 'custom-header' );
+//add_theme_support( 'custom-header' );
 
 //Make the TinyMCE editor text look nice
 add_editor_style();
 
+//all post types
+//require( get_template_directory() .'/inc/cpt.php' ); //FOR SOME REASON THIS BREAKS EVERYTHING.  PASTING CONTENTS BELOW.  BUT WHY?
+	add_action( 'init', 'create_program_post_type' );
+	function create_program_post_type() {
+	  register_post_type( 'program',
+	    array(
+	      'labels' => array(
+			      'name' => __( 'Programs' ),
+			      'singular_name' => __( 'Program' )
+			  ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'rewrite' => array('slug' => 'programs'),
+	      'show_in_nav_menus' => true
+	      )
+	  );
+	}
 
+	add_action( 'init', 'create_video_post_type' );
+	function create_video_post_type() {
+	  register_post_type( 'video',
+	    array(
+	      'labels' => array(
+			      'name' => __( 'Videos' ),
+			      'singular_name' => __( 'Video' )
+			  ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'rewrite' => array('slug' => 'videos'),
+	      'show_in_nav_menus' => false
+	      )
+	  );
+	}
+	add_action( 'init', 'create_highlight_post_type' );
+	function create_highlight_post_type() {
+	  register_post_type( 'highlight',
+	    array(
+	      'labels' => array(
+			      'name' => __( 'Highlights' ),
+			      'singular_name' => __( 'Highlight' )
+			  ),
+	      'public' => true,
+	      'has_archive' => true,
+	      'rewrite' => array('slug' => 'highlights'),
+	      'show_in_nav_menus' => true,
+	      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' )
+	      )
+	  );
+	}
 
-//generic sidebar
-require( get_template_directory() .'/inc/generic_sidebar.php' );
-
-//appearances post type
-//require( get_template_directory() .'/inc/custom_post_type_appearances.php' );
-
-//artwork post type + collection taxonomy
-//require( get_template_directory() .'/inc/custom_post_type_artwork.php' );
-
-//custom boxes
-//require( get_template_directory() . '/inc/custom_boxes.php' );
+//front slide meta boxes
+//require( get_template_directory() .'/inc/front_slide_meta_box.php' );
 
 ?>

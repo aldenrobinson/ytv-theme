@@ -6,7 +6,6 @@
 		<?php get_template_part('loop', 'highlights'); ?>
 	</div><!--highlights-->
 	<div class="large-5 columns soon panel">
-		<h6>Coming Soon</h6>
 		<?php get_template_part('loop', 'soon'); ?>
 	</div><!--soon-->
 </div><!--first front-page.php row-->

@@ -1,0 +1,10 @@
+Plan of ATTACK:
+
+Major components that need to be rebuilt for FDN4:
+
+	NAVBAR -- OKAY, it's working.  Now get everythign else working and come back.
+
+	TABS
+
+	ORBIT -- Create new CPT.  Use LI based layout for slides.  Make all images 4:3. Pull [title] [featured image] [content]. Eventually change to custom fields.  OKAY, it's working.  Get everything else working and come back to configure.
+
