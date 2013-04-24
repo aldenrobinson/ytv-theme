@@ -13,12 +13,10 @@
 <div class="row">
 	<div class="large-5 columns news-events panel">
 		<div class="front-news">
-			<h6>Latest News</h6>
 			<?php get_template_part('loop', 'latestnews'); ?>
 		</div><!--div.front-news-->
 		<hr class="front-sep">
 		<div class="front-major-event">
-			<h6>Programs</h6>
 			<?php get_template_part('loop', 'frontprogram'); ?>
 		</div><!--div.front-major-event-->
 	</div><!--div.news-events-->
