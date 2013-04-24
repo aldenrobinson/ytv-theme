@@ -23,15 +23,15 @@
 	<div class="mountain-bg">
 
 	<div class="row">
-		<header class="siteheader">
+		<header id="siteheader">
 			<div class="row">
 
-				<div class="large-10 columns banner">
-				  <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+				<div id="banner">
+				  <a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 				  <h5><?php bloginfo('description'); ?></h5>
 				</div>
 
-				<div class="large-2 columns hide-for-small logo-div"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory') ?>/images/random/rotate.php?=1234" /></a></div>
+				<div id="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory') ?>/images/random/rotate.php?=1234" /></a></div>
 				
 			</div>
 		</header>

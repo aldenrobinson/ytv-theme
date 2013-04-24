@@ -56,15 +56,44 @@ $txtcolor: #333;
 $darkred: rgb(75,75,70);
 $brightred: rgb(200,60,60);
 $brightoffwhite: rgb(255,255,240); 
+$phablet-screen: emCalc(640px);
+$phablet: "only screen and (min-width: "#{$phablet-screen}")";
 
 //MIXINS
+@mixin caps { text-transform: uppercase; letter-spacing: 0.1em; }
+@mixin smallcaps { font-variant: small-caps; letter-spacing: 0.1em; }
+@mixin mainshadow { box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.5); }
 @mixin stitchborder { border-style: dashed; border-color: rgb(220,220,200); }
 
 //BASE STYLES
 //Styles of specific elements, generally without children.
+.mountain-bg { min-height: 100%; background: url('../images/mountains3.png') no-repeat 0 100%; background-size: contain; background-attachment: fixed; box-shadow: inset 0 0 25px rgba(150,150,150,0.5); }
+
 
 //LAYOUT STYLES
 //Styling pertaining to the layout of the page, esp. Foundation grid mixins.
 
 //MODULE STYLES
 //Styling of standalone modules with multiple instances, e.g. panel styles, form styles, navbar styles.
+#siteheader {
+	@media #{$phablet}{ margin: 4em 0 1em; }
+	#banner { @include grid-column(12); 
+		@media #{$phablet}{ @include grid-column(10); }
+		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0; 
+			@media #{$phablet}{}
+			@media #{$small}{ font-size: emCalc(38px); text-align: right; }
+			@media #{$medium}{ font-size: emCalc(44px); }
+			@media #{$large}{ font-size: emCalc(48px); }
+		}
+		h5 { text-align: center; font-weight: 100; @include caps; font-size: 0.7em;
+			@media #{$phablet}{ font-size: 1em; }
+			@media #{$small}{ text-align: right; margin-right: 3em; }
+		}
+	}
+	#logo { display: none;
+		@media #{$phablet}{ @include grid-column(2); display: block; }
+		img { position: relative; top: -2em; 
+			@media #{$phablet}{ max-height: 8em; }
+		}
+	}
+}

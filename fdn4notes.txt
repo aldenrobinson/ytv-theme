@@ -8,3 +8,10 @@ Major components that need to be rebuilt for FDN4:
 
 	ORBIT -- Create new CPT.  Use LI based layout for slides.  Make all images 4:3. Pull [title] [featured image] [content]. Eventually change to custom fields.  OKAY, it's working.  Get everything else working and come back to configure.
 
+Style elements line-by-line
+	header
+
+@media #{$phablet}{}
+@media #{$small}{}
+@media #{$medium}{}
+@media #{$large}{}
