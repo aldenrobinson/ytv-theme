@@ -29,9 +29,8 @@ MEETING WITH MARY 4/25
 			facebook button too
 			
 NEW PLAN:
-	Move menu bar to top of site, fixed.  
-		Revert to basic FDN boilerplate. Then include WP nav w/o wrapper. Make sure it sortof works.
-	Style wrapper.
+	x  Move menu bar to top of site, fixed.  
+	x Style wrapper.
 	Add full-width orbit slideshow.
 		Grab some new content for this.
 

@@ -40,6 +40,6 @@
 	</div>
 
 	<div class="row">
-		<div class="twelve columns wrapper">
+		<div id="wrapper" class="twelve columns">
 			<div class="row">
 				<div class="large-11 columns centered body-content-area">
