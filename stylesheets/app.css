@@ -2592,7 +2592,8 @@ table {
     font-size: 1.875em;
     text-align: center;
     font-weight: 100;
-    margin: 0; }
+    margin: 0;
+    font-weight: 400; }
     @media only screen and (min-width: 48em) {
       #siteheader #banner h1 {
         font-size: 2.375em;

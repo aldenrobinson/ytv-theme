@@ -79,7 +79,7 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 	@media #{$phablet}{ margin: 4em 0 1em; }
 	#banner { @include grid-column(12); 
 		@media #{$phablet}{ @include grid-column(10); }
-		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0; 
+		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0; font-weight: 400;
 			@media #{$phablet}{}
 			@media #{$small}{ font-size: emCalc(38px); text-align: right; }
 			@media #{$medium}{ font-size: emCalc(44px); }

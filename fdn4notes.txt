@@ -15,3 +15,17 @@ Style elements line-by-line
 @media #{$small}{}
 @media #{$medium}{}
 @media #{$large}{}
+
+MEETING WITH MARY 4/25
+	In conjunction with building new template
+		Make full width event banner slider with room for a paragraph of text.
+		Add category feed news page
+			click through to category list views
+			include a few more teaser links in each category below the featured story
+		Spiff up news search function
+		Add calendar plugin
+		Remove get involved flyout and replace with donate button
+		create video archive
+		mailing address in footer PO BOX 163 Fairfax VT 05454
+		add mailing address to contact page
+			facebook button too
