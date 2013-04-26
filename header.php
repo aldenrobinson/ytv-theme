@@ -20,6 +20,8 @@
 
 <body <?php body_class(); ?>>
 
+	<?php get_template_part('nav'); ?>
+
 	<div class="mountain-bg">
 
 	<div class="row">
@@ -36,8 +38,6 @@
 			</div>
 		</header>
 	</div>
-
-	<?php get_template_part('nav'); ?>
 
 	<div class="row">
 		<div class="twelve columns wrapper">

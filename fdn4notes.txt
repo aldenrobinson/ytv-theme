@@ -8,8 +8,6 @@ Major components that need to be rebuilt for FDN4:
 
 	ORBIT -- Create new CPT.  Use LI based layout for slides.  Make all images 4:3. Pull [title] [featured image] [content]. Eventually change to custom fields.  OKAY, it's working.  Get everything else working and come back to configure.
 
-Style elements line-by-line
-	header
 
 @media #{$phablet}{}
 @media #{$small}{}
@@ -29,3 +27,11 @@ MEETING WITH MARY 4/25
 		mailing address in footer PO BOX 163 Fairfax VT 05454
 		add mailing address to contact page
 			facebook button too
+			
+NEW PLAN:
+	Move menu bar to top of site, fixed.  
+		Revert to basic FDN boilerplate. Then include WP nav w/o wrapper. Make sure it sortof works.
+	Style wrapper.
+	Add full-width orbit slideshow.
+		Grab some new content for this.
+

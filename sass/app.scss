@@ -75,8 +75,11 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 
 //MODULE STYLES
 //Styling of standalone modules with multiple instances, e.g. panel styles, form styles, navbar styles.
-#siteheader {
-	@media #{$phablet}{ margin: 4em 0 1em; }
+#siteheader { margin: 6em 0 2em;
+	@media #{$phablet}{ margin: 6em 0 0; }
+	@media #{$small}{}
+	@media #{$medium}{ margin: 8em 0 2em; }
+	@media #{$large}{}
 	#banner { @include grid-column(12); 
 		@media #{$phablet}{ @include grid-column(10); }
 		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0; font-weight: 400;
