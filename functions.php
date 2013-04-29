@@ -26,22 +26,23 @@ function load_scripts() {
 	wp_register_script( 'clearing', get_template_directory_uri() . '/javascripts/foundation/foundation.clearing.js', array('jquery') );
 	wp_register_script( 'cookie', get_template_directory_uri() . '/javascripts/foundation/foundation.cookie.js', array('jquery') );
 	wp_register_script( 'dropdown', get_template_directory_uri() . '/javascripts/foundation/foundation.dropdown.js', array('jquery') );
-	wp_register_script( 'forms', get_template_directory_uri() . '/javascripts/foundation/foundation.forms.js', array('jquery') );
+	wp_register_script( 'forms', get_template_directory_uri() . '/javascripts/foundation/foundation.forms.js', array('jquery', 'foundation'), '', true );
 	wp_register_script( 'joyride', get_template_directory_uri() . '/javascripts/foundation/foundation.joyride.js', array('jquery') );
 	wp_register_script( 'magellan', get_template_directory_uri() . '/javascripts/foundation/foundation.magellan.js', array('jquery') );
 	wp_register_script( 'orbit', get_template_directory_uri() . '/javascripts/foundation/foundation.orbit.js', array('jquery', 'foundation'), '', true );
 	wp_register_script( 'placeholder', get_template_directory_uri() . '/javascripts/foundation/foundation.placeholder.js', array('jquery') );
 	wp_register_script( 'reveal', get_template_directory_uri() . '/javascripts/foundation/foundation.reveal.js', array('jquery', 'foundation'), '', true );
-	wp_register_script( 'section', get_template_directory_uri() . '/javascripts/foundation/foundation.section.js', array('jquery') );
+	wp_register_script( 'section', get_template_directory_uri() . '/javascripts/foundation/foundation.section.js', array('jquery', 'foundation'), '', true );
 	wp_register_script( 'tooltips', get_template_directory_uri() . '/javascripts/foundation/foundation.tooltips.js', array('jquery') );
-	wp_register_script( 'topbar', get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', array('jquery') );
+	wp_register_script( 'topbar', get_template_directory_uri() . '/javascripts/foundation/foundation.topbar.js', array('jquery', 'foundation'), '', true );
 	//Okay, now call those of the above registered scripts that you want to use throughout the site.  If you have one that will load on only one template, call it there instead. For example:
-	wp_enqueue_script('app');
 	wp_enqueue_script('foundation'); 
-	wp_enqueue_script('reveal'); 
+	wp_enqueue_script('app');
+	//wp_enqueue_script('reveal'); 
 	//wp_enqueue_script('orbit'); 
-	wp_enqueue_script('section'); 
-	wp_enqueue_script('forms'); 
+	//wp_enqueue_script('section'); 
+	//wp_enqueue_script('forms'); 
+	wp_enqueue_script('topbar');
 	}
 
 add_action( 'wp_enqueue_scripts', 'load_scripts' );

@@ -51,19 +51,14 @@
 
 //VARIABLES
 //Particularly colors, borders.
-$wrapperbg: rgba(255,255,240,0.75);
-$txtcolor: #333;
-$darkred: rgb(75,75,70);
-$brightred: rgb(200,60,60);
-$brightoffwhite: rgb(255,255,240); 
 $phablet-screen: emCalc(640px);
 $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 
 //MIXINS
 @mixin caps { text-transform: uppercase; letter-spacing: 0.1em; }
 @mixin smallcaps { font-variant: small-caps; letter-spacing: 0.1em; }
-@mixin mainshadow { box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.5); }
-@mixin stitchborder { border-style: dashed; border-color: rgb(220,220,200); }
+@mixin mainshadow { box-shadow: 5px 5px 25px 5px rgba(220,220,220,0.25); }
+@mixin stitchborder { border-style: dashed; border-color: rgb(220,220,220); }
 
 //BASE STYLES
 //Styles of specific elements, generally without children.
@@ -75,8 +70,16 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 
 //MODULE STYLES
 //Styling of standalone modules with multiple instances, e.g. panel styles, form styles, navbar styles.
-#siteheader {
-	@media #{$phablet}{ margin: 4em 0 1em; }
+#sitenav {
+	.dropdown a { background: $paper; }
+	a:not(.button):hover { background: $lightpaper; }
+	a { @include caps; }	
+}
+#siteheader { margin: 6em 0 2em;
+	@media #{$phablet}{ margin: 6em 0 0; }
+	@media #{$small}{}
+	@media #{$medium}{ margin: 8em 0 2em; }
+	@media #{$large}{}
 	#banner { @include grid-column(12); 
 		@media #{$phablet}{ @include grid-column(10); }
 		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0;
@@ -98,3 +101,6 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 	}
 }
 nav {}
+#wrapper { background: $transpaper; @include mainshadow;
+	
+}

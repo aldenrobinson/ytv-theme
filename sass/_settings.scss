@@ -979,7 +979,7 @@ $header-font-color: #333;
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: $paper;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -993,24 +993,24 @@ $header-font-color: #333;
 // $topbar-title-font-size: emCalc(17px);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
+$topbar-link-color: $brightred;
 // $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+$topbar-link-font-size: emCalc(16px);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
-// $topbar-dropdown-link-color: #fff;
+$topbar-dropdown-bg: $transpaper;
+$topbar-dropdown-link-color: $brightred;
 // $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
-// $topbar-dropdown-toggle-alpha: 0.5;
+$topbar-dropdown-toggle-color: $brightred;
+$topbar-dropdown-toggle-alpha: 0.5;
 // $dropdown-label-color: #555;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13px);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: $brightred;
+$topbar-menu-icon-color: $brightred;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
