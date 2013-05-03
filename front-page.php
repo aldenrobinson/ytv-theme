@@ -1,12 +1,8 @@
 <?php get_header(); ?>
 
 <div class="row">
-	<div class="large-7 columns highlights hide-for-small">
-		<h6>Highlights</h6>
+	<div class="large-12 columns highlights">
 		<?php get_template_part('loop', 'highlights'); ?>
-	</div><!--highlights-->
-	<div class="large-5 columns soon panel">
-		<?php get_template_part('loop', 'soon'); ?>
 	</div><!--soon-->
 </div><!--first front-page.php row-->
 

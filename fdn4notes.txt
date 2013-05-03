@@ -8,7 +8,7 @@ Major components that need to be rebuilt for FDN4:
 
 	ORBIT -- Create new CPT.  Use LI based layout for slides.  Make all images 4:3. Pull [title] [featured image] [content]. Eventually change to custom fields.  OKAY, it's working.  Get everything else working and come back to configure.
 
-
+MEDIA QUERIES
 @media #{$phablet}{}
 @media #{$small}{}
 @media #{$medium}{}
@@ -32,5 +32,15 @@ NEW PLAN:
 	x  Move menu bar to top of site, fixed.  
 	x Style wrapper.
 	Add full-width orbit slideshow.
+		DECISION TIME.............
+			do we stick with WP Events Manager or migrate to Event Espresso?
+			WPEM may be simpler and better suited to novice editors.
+			EE is more powerful but quirkier.
+			Doubtful they will be trying to sell tickets, but it's possible with tradcamp. 
+			Plugin needs to have featured image. both do.
+			Plugin needs to support WP queries. EE does indirectly. WPEM can do something similar, but not via custom post types.
+				OR DOES IT? We might want a separate Rotator function anyway. It may be too much to ask people to editorialize events and decide which one to feature.
+				TRY setting up the WPEM to do this. If it doesn't work, we'll move elsewhere. better to know before we get too far.
 		Grab some new content for this.
+		
 
