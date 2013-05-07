@@ -2652,3 +2652,22 @@ table {
 #wrapper {
   background: rgba(255, 255, 240, 0.75);
   box-shadow: 5px 5px 25px 5px rgba(220, 220, 220, 0.25); }
+  #wrapper #highlights {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 1em; }
+    #wrapper #highlights .orbit-container {
+      width: 100%;
+      background: transparent; }
+      #wrapper #highlights .orbit-container .slidecaption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 1em;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: right;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+        #wrapper #highlights .orbit-container .slidecaption .slidedetails p {
+          margin: 0; }

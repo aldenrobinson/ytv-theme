@@ -42,5 +42,7 @@ NEW PLAN:
 				OR DOES IT? We might want a separate Rotator function anyway. It may be too much to ask people to editorialize events and decide which one to feature.
 				TRY setting up the WPEM to do this. If it doesn't work, we'll move elsewhere. better to know before we get too far.
 		Grab some new content for this.
-		
+
+		x  make width 100% and space with succeeding rows
+		add event title, date, location in bar @ bottom
 
