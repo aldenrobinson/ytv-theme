@@ -102,5 +102,5 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 }
 nav {}
 #wrapper { background: $transpaper; @include mainshadow;
-	
+	#highlights {}	
 }
