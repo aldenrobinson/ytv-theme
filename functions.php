@@ -57,7 +57,7 @@ require( get_template_directory() . '/inc/foundation-topbar-walker.php' );
 
 //Add thumbnail support
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'highlightslide', 400, 300, true ); 
+add_image_size( 'highlightslide', 1200, 600, true ); 
 
 //Add custom header support.  To call in theme, add <img src="[php tag] header_image(); [close php]"> where desired.
 //add_theme_support( 'custom-header' );
