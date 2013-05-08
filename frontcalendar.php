@@ -28,6 +28,7 @@
 							</li>
 						<?php } ?>
 					</ul>
+					<a class="jump" href="#">See all &raquo;</a>
 				</div>
 			</section>
 			<section class="eventtab" id="festivals">
