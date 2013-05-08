@@ -14,18 +14,20 @@
 			<section class="eventtab" id="concerts">
 				<p class="title" data-section-title><a href="#panel1">Concerts</a></p>
 				<div class="content" data-section-content>
-					<?php 
-						$events = EM_Events::get(array(
-							'orderby' => event_start_date,
-							'category' => 18
-						));
-						foreach ( $events as $event ) {
-					?>
-						<div class="event">
-							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
-						</div>
-					<?php } ?>
+					<ul>
+						<?php 
+							$events = EM_Events::get(array(
+								'orderby' => event_start_date,
+								'category' => 18
+							));
+							foreach ( $events as $event ) {
+						?>
+							<li>
+								<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+								<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+							</li>
+						<?php } ?>
+					</ul>
 				</div>
 			</section>
 			<section class="eventtab" id="festivals">
