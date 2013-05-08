@@ -2648,9 +2648,9 @@ table {
     @media only screen and (min-width: 40em) {
       #wrapper #content #events-video {
         padding-left: 2em; } }
-    #wrapper #content #events-video .eventstab ul {
+    #wrapper #content #events-video .eventtab ul {
       list-style-type: none; }
-      #wrapper #content #events-video .eventstab ul li {
+      #wrapper #content #events-video .eventtab ul li {
         margin: 1em 0; }
 
 #sitefooter {
