@@ -123,6 +123,11 @@ nav {}
 		}
 		#events-video {
 			@media #{$phablet}{ padding-left: 2em; }
+			.eventstab {
+				ul { list-style-type: none; 
+					li { margin: 1em 0; }
+				}
+			}
 		}
 
 	}
