@@ -1,6 +1,7 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
 @import url("http://fonts.googleapis.com/css?family=Quattrocento+Sans");
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import "../fonts/ardarling.css";
 @import "colors";
 
@@ -20,7 +21,7 @@
 // We use these to control various global styles
 $body-bg: url('../images/groovepaper.png');
 $body-font-color: #333;
-$body-font-family: "Quattrocento Sans", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Libre Baskerville", Georgia, Times, serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -88,7 +89,7 @@ $primary-color: $brightred;
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Libre Baskerville", Georgia, Times, serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 $header-font-color: #333;

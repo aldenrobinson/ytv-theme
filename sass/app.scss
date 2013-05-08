@@ -107,10 +107,8 @@ nav {}
 	#highlights { width: 100%; padding: 0; margin: 0 0 1em; 
 		.orbit-container { width: 100%; background: transparent;
 			.slidecaption { position: absolute; left: 0; bottom: 0; width: 100%; padding: 1em; background: rgba(0,0,0,0.5); color: $lightpaper; text-align: right; font-family: $header-font-family;
-				.slidetitle {}
-				.slidedetails {
-					p { margin: 0; }
-				}
+				h5 { @include caps; font-weight: normal; }
+				a { color: $lightpaper; }
 			}
 		}
 	}

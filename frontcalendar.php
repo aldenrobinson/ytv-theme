@@ -9,88 +9,98 @@
 </div>
 <div class="row">
 	<div class="large-12 columns front-calendar">
-			  <dl class="tabs contained mobile five-up">
-				  <dd><a href="#cal-concerts" class="active">Concerts</a></dd>
-				 <dd><a href="#cal-festivals">Festivals</a></dd>
-				  <dd><a href="#cal-dances">Dances</a></dd>
-				  <dd><a href="#cal-sessions">Sessions</a></dd>
-				  <dd><a href="#cal-classes">Classes</a></dd>
-				  <!--<dd><a href="#cal-media">Media</a></dd>-->
-				  <!--<dd><a href="#cal-families">Families</a></dd>-->
-			  </dl>
-			  
-			  <ul class="tabs-content contained mobile">
-				  <li class="active" id="cal-concertsTab">
-					  <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="1" type="list"]'); ?>
-					  </table>
-					<a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-concerts">More concerts...</a>	  
-				  </li>
-				  <li id="cal-festivalsTab">
-					   <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="3" type="list"]'); ?>
-					  </table>
-					  <a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-festivals">More festivals...</a>
-				  </li>
-				  <li id="cal-dancesTab">
-					  <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="2" type="list"]'); ?>
-					  </table>
-					  <a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-dances">More dances...</a>
-				  </li>
-				  <li id="cal-sessionsTab">
-					  <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="4" type="list"]'); ?>
-					  </table>
-					  <a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-sessions">More sessions...</a>
-				   </li>
-				  <li id="cal-classesTab">
-					  <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							<th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="13" type="list"]'); ?>
-					  </table>
-					  <a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-classes">More classes...</a>
-				   </li>
-				    <li id="cal-mediaTab">
-					  <table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="11" type="list"]'); ?>
-					  </table>
-					  <a class="more-calendar" href="http://youngtraditionvermont.org/events/#cal-media">More listings...</a>
-				   </li>
-				  <!--<li id="cal-familiesTab">
-					<table class="front-schedule">
-						  <tr>
-							  <th>Date</th>
-							  <th>Event</th>
-							  <th>Location</th>
-						 <?php echo do_shortcode('[google-calendar-events id="5" type="list"]'); ?>
-					 </table>
-				  </li>-->
-			  </ul>
-			  
-			  
-	  </div><!--end 12col front cal-->
-  </div><!--end first inside row-->
+		<?php wp_enqueue_script('section'); ?>
+	 	<div class="section-container auto" data-section>
+			<section id="concerts">
+				<p class="title" data-section-title><a href="#panel1">Concerts</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+			<section id="festivals">
+				<p class="title" data-section-title><a href="#panel1">Festivals</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+			<section id="dances">
+				<p class="title" data-section-title><a href="#panel2">Dances</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+			<section id="sessions">
+				<p class="title" data-section-title><a href="#panel3">Sessions &amp; Jams</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+			<section id="classes">
+				<p class="title" data-section-title><a href="#panel4">Classes</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+			<section id="media">
+				<p class="title" data-section-title><a href="#panel5">Media</a></p>
+				<div class="content" data-section-content>
+					<?php 
+						$events = EM_Events::get(array(
+							'orderby' => event_start_date,
+							'category' => 18
+						));
+						foreach ( $events as $event ) {
+					?>
+							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+					<?php } ?>
+				</div>
+			</section>
+		</div><!--section container--> 
+	</div><!--end 12col front cal-->
+</div><!--end first inside row-->

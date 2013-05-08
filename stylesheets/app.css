@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Quattrocento+Sans");
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import url(../fonts/ardarling.css);
 *,
 *:before,
@@ -16,7 +17,7 @@ body {
   color: #333333;
   padding: 0;
   margin: 0;
-  font-family: "Quattrocento Sans", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Libre Baskerville", Georgia, Times, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -987,7 +988,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Libre Baskerville", Georgia, Times, serif;
   font-weight: bold;
   font-style: normal;
   color: #333333;
@@ -2668,6 +2669,10 @@ table {
         background: rgba(0, 0, 0, 0.5);
         color: white;
         text-align: right;
-        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-        #wrapper #highlights .orbit-container .slidecaption .slidedetails p {
-          margin: 0; }
+        font-family: "Libre Baskerville", Georgia, Times, serif; }
+        #wrapper #highlights .orbit-container .slidecaption h5 {
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: normal; }
+        #wrapper #highlights .orbit-container .slidecaption a {
+          color: white; }

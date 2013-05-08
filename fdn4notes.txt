@@ -44,5 +44,11 @@ NEW PLAN:
 		Grab some new content for this.
 
 		x  make width 100% and space with succeeding rows
-		add event title, date, location in bar @ bottom
+		x  add event title, date, location in bar @ bottom
+		Style event details
+		Verify mobile state
 
+	Create and style tab calendar
+		Add three dummy events in each category
+		Style section tabs
+		Create queries
