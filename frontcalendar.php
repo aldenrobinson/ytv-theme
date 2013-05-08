@@ -21,8 +21,10 @@
 						));
 						foreach ( $events as $event ) {
 					?>
+						<div class="event">
 							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
 							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+						</div>
 					<?php } ?>
 				</div>
 			</section>
@@ -36,8 +38,10 @@
 						));
 						foreach ( $events as $event ) {
 					?>
+						<div class="event">
 							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
 							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+						</div>
 					<?php } ?>
 				</div>
 			</section>
@@ -51,8 +55,10 @@
 						));
 						foreach ( $events as $event ) {
 					?>
+						<div class="event">
 							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
 							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+						</div>
 					<?php } ?>
 				</div>
 			</section>
@@ -66,8 +72,10 @@
 						));
 						foreach ( $events as $event ) {
 					?>
+						<div class="event">
 							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
 							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+						</div>
 					<?php } ?>
 				</div>
 			</section>
