@@ -104,7 +104,7 @@ $border: 1px solid $darkpaper;
 	}
 }
 nav {}
-#wrapper { background: $transpaper; @include mainshadow;
+#wrapper { background: $paper; @include mainshadow;
 	#highlights { width: 100%; padding: 0; margin: 0 0 1em; 
 		.orbit-container { width: 100%; background: transparent;
 			.slidecaption { position: absolute; left: 0; bottom: 0; width: 100%; padding: 1em; background: rgba($lightpaper, 0.8); color: #333; text-align: right; font-family: $header-font-family;

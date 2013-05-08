@@ -2609,7 +2609,7 @@ table {
           max-height: 8em; } }
 
 #wrapper {
-  background: rgba(255, 255, 240, 0.75);
+  background: ivory;
   box-shadow: 5px 5px 25px 5px rgba(220, 220, 220, 0.25); }
   #wrapper #highlights {
     width: 100%;
