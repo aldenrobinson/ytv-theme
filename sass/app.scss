@@ -73,9 +73,9 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 //MODULE STYLES
 //Styling of standalone modules with multiple instances, e.g. panel styles, form styles, navbar styles.
 #sitenav {
-	.dropdown a { background: $paper; }
-	a:not(.button):hover { background: $lightpaper; }
-	a { @include caps; }	
+	.dropdown a { background: $paper; padding: 15px; }
+	a:not(.button):hover { background: $darkpaper; }
+	section>ul>li>a:not(.button) { @include caps; }	
 }
 #siteheader { margin: 6em 0 2em;
 	@media #{$phablet}{ margin: 6em 0 0; }
@@ -90,7 +90,7 @@ $phablet: "only screen and (min-width: "#{$phablet-screen}")";
 			@media #{$medium}{ font-size: emCalc(44px); }
 			@media #{$large}{ font-size: emCalc(48px); }
 		}
-		h5 { text-align: center; font-weight: 400; @include caps; font-size: 0.7em;
+		h5 { text-align: center; font-weight: 400; font-size: 0.7em;
 			@media #{$phablet}{ font-size: 1em; }
 			@media #{$small}{ text-align: right; margin-right: 3em; }
 		}
@@ -106,10 +106,13 @@ nav {}
 #wrapper { background: $transpaper; @include mainshadow;
 	#highlights { width: 100%; padding: 0; margin: 0 0 1em; 
 		.orbit-container { width: 100%; background: transparent;
-			.slidecaption { position: absolute; left: 0; bottom: 0; width: 100%; padding: 1em; background: rgba(0,0,0,0.5); color: $lightpaper; text-align: right; font-family: $header-font-family;
-				h5 { @include caps; font-weight: normal; }
-				a { color: $lightpaper; }
+			.slidecaption { position: absolute; left: 0; bottom: 0; width: 100%; padding: 1em; background: rgba(255,255,255,0.5); color: #333; text-align: right; font-family: $header-font-family;
+				h5 { @include caps; font-weight: 600; 
+					a { color: $primary-color; }
+				}
+				a { color: $body-font-color; }
 			}
 		}
 	}
+	#content { padding: 0 2em; }
 }

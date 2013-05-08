@@ -2574,10 +2574,11 @@ table {
   display: none; }
 
 #sitenav .dropdown a {
-  background: ivory; }
+  background: ivory;
+  padding: 15px; }
 #sitenav a:not(.button):hover {
-  background: white; }
-#sitenav a {
+  background: #f8f8c4; }
+#sitenav section > ul > li > a:not(.button) {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
@@ -2623,8 +2624,6 @@ table {
     #siteheader #banner h5 {
       text-align: center;
       font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
       font-size: 0.7em; }
       @media only screen and (min-width: 40em) {
         #siteheader #banner h5 {
@@ -2666,13 +2665,17 @@ table {
         bottom: 0;
         width: 100%;
         padding: 1em;
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
+        background: rgba(255, 255, 255, 0.5);
+        color: #333;
         text-align: right;
         font-family: "Libre Baskerville", Georgia, Times, serif; }
         #wrapper #highlights .orbit-container .slidecaption h5 {
           text-transform: uppercase;
           letter-spacing: 0.1em;
-          font-weight: normal; }
+          font-weight: 600; }
+          #wrapper #highlights .orbit-container .slidecaption h5 a {
+            color: #c83c3c; }
         #wrapper #highlights .orbit-container .slidecaption a {
-          color: white; }
+          color: #333333; }
+  #wrapper #content {
+    padding: 0 2em; }

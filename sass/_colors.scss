@@ -1,6 +1,6 @@
 $darkred: rgb(75,75,70);
 $brightred: rgb(200,60,60);
 $paper: rgb(255,255,240); 
-$darkpaper: darken($paper, 25%);
+$darkpaper: desaturate(darken($paper, 10%), 20%);
 $lightpaper: lighten($paper, 3%);
 $transpaper: rgba($paper, 0.75);

@@ -31,7 +31,7 @@ MEETING WITH MARY 4/25
 NEW PLAN:
 	x  Move menu bar to top of site, fixed.  
 	x Style wrapper.
-	Add full-width orbit slideshow.
+	x Add full-width orbit slideshow.
 		DECISION TIME.............
 			do we stick with WP Events Manager or migrate to Event Espresso?
 			WPEM may be simpler and better suited to novice editors.
@@ -49,6 +49,17 @@ NEW PLAN:
 		Verify mobile state
 
 	Create and style tab calendar
-		Add three dummy events in each category
-		Style section tabs
-		Create queries
+		x Style section tabs
+		x Create queries
+		Add actual IDs when live
+
+BEFORE SENDING TO MARY
+	x Style menubar and dropdown A 
+	See if title can get bigger
+	x Uncaps subtitle
+	x Style slide caption text a little more
+	x Create master padding for body area
+	Fix text in news box
+	Inline and center footer menu
+	Add credit
+	Resolve box shadow issue
