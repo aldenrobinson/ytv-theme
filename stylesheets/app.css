@@ -2652,8 +2652,10 @@ table {
       list-style-type: none; }
       #wrapper #content #events-video .eventtab ul li {
         margin: 1em 0; }
-        #wrapper #content #events-video .eventtab ul li h6 a {
-          color: #c83c3c; }
+        #wrapper #content #events-video .eventtab ul li h6 {
+          margin-bottom: 0.2em; }
+          #wrapper #content #events-video .eventtab ul li h6 a {
+            color: #c83c3c; }
         #wrapper #content #events-video .eventtab ul li p {
           color: #737373; }
 
