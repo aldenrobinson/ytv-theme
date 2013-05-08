@@ -116,8 +116,8 @@ nav {}
 		}
 	}
 	#content { padding: 0 2em; 
-		#news-programs { border-right: $border; 
-			@media #{$phablet} { padding-right: 2em; }
+		#news-programs { 
+			@media #{$phablet} { padding-right: 2em; border-right: $border;  }
 			#front-news { border-bottom: $border; }
 			#front-program {}
 		}

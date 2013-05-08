@@ -2638,13 +2638,12 @@ table {
           color: #333333; }
   #wrapper #content {
     padding: 0 2em; }
-    #wrapper #content #news-programs {
-      border-right: 1px solid #f8f8c4; }
-      @media only screen and (min-width: 40em) {
-        #wrapper #content #news-programs {
-          padding-right: 2em; } }
-      #wrapper #content #news-programs #front-news {
-        border-bottom: 1px solid #f8f8c4; }
+    @media only screen and (min-width: 40em) {
+      #wrapper #content #news-programs {
+        padding-right: 2em;
+        border-right: 1px solid #f8f8c4; } }
+    #wrapper #content #news-programs #front-news {
+      border-bottom: 1px solid #f8f8c4; }
     @media only screen and (min-width: 40em) {
       #wrapper #content #events-video {
         padding-left: 2em; } }
