@@ -18,13 +18,13 @@
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 18
+								'category' => 21
 							));
 							foreach ( $events as $event ) {
 						?>
 							<li>
 								<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-								<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+								<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 							</li>
 						<?php } ?>
 					</ul>
@@ -43,7 +43,7 @@
 						?>
 							<li>
 								<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-								<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+								<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 							</li>
 						<?php } ?>
 					</ul>
@@ -62,7 +62,7 @@
 						?>
 							<li>
 								<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-								<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+								<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 							</li>
 						<?php } ?>
 					</ul>
@@ -81,7 +81,7 @@
 						?>
 							<li>
 								<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-								<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
+								<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 							</li>
 						<?php } ?>
 					</ul>

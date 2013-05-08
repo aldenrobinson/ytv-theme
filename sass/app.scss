@@ -125,7 +125,10 @@ nav {}
 			@media #{$phablet}{ padding-left: 2em; }
 			.eventtab {
 				ul { list-style-type: none; 
-					li { margin: 1em 0; }
+					li { margin: 1em 0; 
+						h6 a { color: $primary-color; }
+						p { color: lighten($body-font-color, 25%); } 
+					}
 				}
 			}
 		}
