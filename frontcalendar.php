@@ -18,7 +18,7 @@
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 21
+								'category' => 18 
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -37,7 +37,7 @@
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 18
+								'category' => 21
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -56,7 +56,7 @@
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 18
+								'category' => 19
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -75,7 +75,7 @@
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 18
+								'category' => 20
 							));
 							foreach ( $events as $event ) {
 						?>
