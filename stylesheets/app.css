@@ -1710,12 +1710,12 @@ small.error {
   width: 100%;
   display: block;
   margin-bottom: 1.25em;
-  border: 1px solid #cccccc;
+  border: 1px solid #f8f8c4;
   border-top: none; }
   .section-container section,
   .section-container .section, .section-container.auto section,
   .section-container.auto .section {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #f8f8c4;
     position: relative; }
     .section-container section .title,
     .section-container .section .title, .section-container.auto section .title,
@@ -1724,20 +1724,20 @@ small.error {
       cursor: pointer;
       width: 100%;
       margin: 0;
-      background-color: #efefef; }
+      background-color: #fdfdf2; }
       .section-container section .title a,
       .section-container .section .title a, .section-container.auto section .title a,
       .section-container.auto .section .title a {
         padding: 0.9375em;
         display: inline-block;
-        color: #333333;
+        color: #c83c3c;
         font-size: 0.875em;
         white-space: nowrap;
         width: 100%; }
       .section-container section .title:hover,
       .section-container .section .title:hover, .section-container.auto section .title:hover,
       .section-container.auto .section .title:hover {
-        background-color: #e2e2e2; }
+        background-color: #fbfbdb; }
     .section-container section .content,
     .section-container .section .content, .section-container.auto section .content,
     .section-container.auto .section .content {
@@ -1763,7 +1763,7 @@ small.error {
     .section-container section.active .title,
     .section-container .section.active .title, .section-container.auto section.active .title,
     .section-container.auto .section.active .title {
-      background: #d5d5d5; }
+      background: #f8f8c4; }
 
 .section-container.tabs {
   border: 0;
@@ -1776,7 +1776,7 @@ small.error {
     .section-container.tabs section .title,
     .section-container.tabs .section .title {
       width: auto;
-      border: 1px solid #cccccc;
+      border: 1px solid #f8f8c4;
       border-right: 0;
       border-bottom: 0;
       position: absolute;
@@ -1786,10 +1786,10 @@ small.error {
         width: 100%; }
     .section-container.tabs section:last-child .title,
     .section-container.tabs .section:last-child .title {
-      border-right: 1px solid #cccccc; }
+      border-right: 1px solid #f8f8c4; }
     .section-container.tabs section .content,
     .section-container.tabs .section .content {
-      border: 1px solid #cccccc;
+      border: 1px solid #f8f8c4;
       position: absolute;
       z-index: 10;
       top: -1px; }
@@ -1814,7 +1814,7 @@ small.error {
       .section-container.auto section .title,
       .section-container.auto .section .title {
         width: auto;
-        border: 1px solid #cccccc;
+        border: 1px solid #f8f8c4;
         border-right: 0;
         border-bottom: 0;
         position: absolute;
@@ -1824,10 +1824,10 @@ small.error {
           width: 100%; }
       .section-container.auto section:last-child .title,
       .section-container.auto .section:last-child .title {
-        border-right: 1px solid #cccccc; }
+        border-right: 1px solid #f8f8c4; }
       .section-container.auto section .content,
       .section-container.auto .section .content {
-        border: 1px solid #cccccc;
+        border: 1px solid #f8f8c4;
         position: absolute;
         z-index: 10;
         top: -1px; }
@@ -1844,7 +1844,7 @@ small.error {
     padding-top: 0 !important; }
 
   .section-container.vertical-nav {
-    border: 1px solid #cccccc;
+    border: 1px solid #f8f8c4;
     border-top: none; }
     .section-container.vertical-nav section,
     .section-container.vertical-nav .section {
@@ -1864,12 +1864,12 @@ small.error {
         top: -1px;
         z-index: 999;
         min-width: 12.5em;
-        border: 1px solid #cccccc; }
+        border: 1px solid #f8f8c4; }
 
   .section-container.horizontal-nav {
     position: relative;
-    background: #efefef;
-    border: 1px solid #cccccc; }
+    background: #fdfdf2;
+    border: 1px solid #f8f8c4; }
     .section-container.horizontal-nav section,
     .section-container.horizontal-nav .section {
       padding-top: 0;
@@ -1878,7 +1878,7 @@ small.error {
       .section-container.horizontal-nav section .title,
       .section-container.horizontal-nav .section .title {
         width: auto;
-        border: 1px solid #cccccc;
+        border: 1px solid #f8f8c4;
         border-left: 0;
         top: -1px;
         position: absolute;
@@ -1897,7 +1897,7 @@ small.error {
         left: 0;
         top: -2px;
         min-width: 12.5em;
-        border: 1px solid #cccccc; } }
+        border: 1px solid #f8f8c4; } }
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
