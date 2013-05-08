@@ -2613,8 +2613,7 @@ table {
   box-shadow: 5px 5px 25px 5px rgba(220, 220, 220, 0.25); }
   #wrapper #highlights {
     width: 100%;
-    padding: 0;
-    margin: 0 0 1em; }
+    padding: 0; }
     #wrapper #highlights .orbit-container {
       width: 100%;
       background: transparent; }
@@ -2637,7 +2636,7 @@ table {
         #wrapper #highlights .orbit-container .slidecaption a {
           color: #333333; }
   #wrapper #content {
-    padding: 0 2em; }
+    padding: 3em; }
     @media only screen and (min-width: 40em) {
       #wrapper #content #news-programs {
         padding-right: 2em;
@@ -2657,6 +2656,9 @@ table {
             color: #c83c3c; }
         #wrapper #content #events-video .eventtab ul li p {
           color: #737373; }
+
+aside ul {
+  list-style-type: none; }
 
 #sitefooter {
   text-align: center;

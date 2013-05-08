@@ -64,6 +64,9 @@ add_image_size( 'highlightslide', 1200, 600, true );
 
 //Make the TinyMCE editor text look nice
 add_editor_style();
+//
+//generic sidebar
+require( get_template_directory() .'/inc/generic_sidebar.php' );
 
 //all post types
 //require( get_template_directory() .'/inc/cpt.php' ); //FOR SOME REASON THIS BREAKS EVERYTHING.  PASTING CONTENTS BELOW.  BUT WHY?

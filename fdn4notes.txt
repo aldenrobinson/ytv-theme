@@ -63,4 +63,11 @@ BEFORE SENDING TO MARY
 	x Inline and center footer menu
 	Add credit
 	Resolve box shadow issue
-	Add some events
+	x Add some events
+
+NEXT STEPS
+	x style index.php
+		x initialize sidebar
+		decide about rotating header?
+	style single-program.php
+	style news page
