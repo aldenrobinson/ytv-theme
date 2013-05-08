@@ -71,36 +71,6 @@
 					<?php } ?>
 				</div>
 			</section>
-			<section id="classes">
-				<p class="title" data-section-title><a href="#panel4">Classes</a></p>
-				<div class="content" data-section-content>
-					<?php 
-						$events = EM_Events::get(array(
-							'orderby' => event_start_date,
-							'category' => 18
-						));
-						foreach ( $events as $event ) {
-					?>
-							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
-					<?php } ?>
-				</div>
-			</section>
-			<section id="media">
-				<p class="title" data-section-title><a href="#panel5">Media</a></p>
-				<div class="content" data-section-content>
-					<?php 
-						$events = EM_Events::get(array(
-							'orderby' => event_start_date,
-							'category' => 18
-						));
-						foreach ( $events as $event ) {
-					?>
-							<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
-							<a href="<?php the_permalink(); ?>"><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></a>
-					<?php } ?>
-				</div>
-			</section>
 		</div><!--section container--> 
 	</div><!--end 12col front cal-->
 </div><!--end first inside row-->

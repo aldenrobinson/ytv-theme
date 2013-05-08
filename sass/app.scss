@@ -34,7 +34,7 @@
 // @import "foundation/components/labels";
 // @import "foundation/components/inline-lists";
 // @import "foundation/components/pagination";
-@import "foundation/components/panels";
+// @import "foundation/components/panels";
 // @import "foundation/components/pricing-tables";
 // @import "foundation/components/progress-bars";
 // @import "foundation/components/side-nav";
@@ -53,6 +53,7 @@
 //Particularly colors, borders.
 $phablet-screen: emCalc(640px);
 $phablet: "only screen and (min-width: "#{$phablet-screen}")";
+$border: 1px solid $darkpaper;
 
 //MIXINS
 @mixin caps { text-transform: uppercase; letter-spacing: 0.1em; }
@@ -114,5 +115,17 @@ nav {}
 			}
 		}
 	}
-	#content { padding: 0 2em; }
+	#content { padding: 0 2em; 
+		#news-programs { border-right: $border; 
+			@media #{$phablet} { padding-right: 2em; }
+			#front-news { border-bottom: $border; }
+			#front-program {}
+		}
+		#events-video {
+			@media #{$phablet}{ padding-left: 2em; }
+		}
+
+	}
 }
+
+#sitefooter { text-align: center; margin: 3em 0; }

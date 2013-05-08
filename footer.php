@@ -1,19 +1,17 @@
 <!--footer.php-->
-					</div><!--end body-content-area-->
-				</div><!--end body content row-->
-			</div><!--end wrapper-->
-		</div><!--end wrapper row-->	
-		<?php get_template_part('credits'); ?>
-	</div><!-- container -->
+		</div><!--end wrapper-->	
+	</div><!-- end wrapper row -->
+	<div class="row">
+		<footer id="sitefooter">
+			<nav>
+				<?php //wp_nav_menu('footer'); ?>
+			</nav>
+			<p>Copyright &copy; 2013.  Site by <a href="http://aldenrobinson.net">YOUR NAME HERE</a>.</p>
+			<a href="#" class="secondary small button" data-reveal-id="contact-popup">Contact Us</a>
+		</footer>
+	</div>
 </div><!--end mountain bg-->
 
-<footer>
-	<nav>
-		<?php wp_nav_menu('footer'); ?>
-	</nav>
-	<p>Copyright &copy; 2013.  Site by <a href="http://aldenrobinson.net">YOUR NAME HERE</a>.</p>
-	<a href="#" class="secondary small button" data-reveal-id="contact-popup">Contact Us</a>
-</footer>
 
 <!--hidden-->
 	<div id="contact-popup" class="reveal-modal">

@@ -9,16 +9,15 @@
 <div class="row">
 	<div id="content" class="small-12 columns">
 		<div class="row">
-			<div class="large-5 columns news-events panel">
-				<div class="front-news">
+			<div id="news-programs" class="large-5 columns">
+				<div id="front-news">
 					<?php get_template_part('loop', 'latestnews'); ?>
 				</div><!--div.front-news-->
-				<hr class="front-sep">
-				<div class="front-major-event">
+				<div id="front-program">
 					<?php get_template_part('loop', 'frontprogram'); ?>
 				</div><!--div.front-major-event-->
 			</div><!--div.news-events-->
-			<div class="large-7 columns events-and-video">
+			<div id="events-video" class="large-7 columns">
 				<?php get_template_part('frontcalendar'); ?>
 				<?php get_template_part('frontvideo'); ?>
 			</div><!--events and video-->

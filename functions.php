@@ -53,7 +53,7 @@ require( get_template_directory() . '/inc/foundation-topbar-walker.php' );
 
 //Register nav menus THIS IS OVERRIDDEN BY THE ABOVE
 //register_nav_menu( 'Main', 'Main Menu' );
-//register_nav_menu( 'footer', 'Footer Menu' );
+register_nav_menu( 'footer', 'Footer Menu' );
 
 //Add thumbnail support
 add_theme_support( 'post-thumbnails' );
