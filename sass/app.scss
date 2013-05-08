@@ -91,7 +91,7 @@ $border: 1px solid $darkpaper;
 			@media #{$medium}{ font-size: emCalc(44px); }
 			@media #{$large}{ font-size: emCalc(48px); }
 		}
-		h5 { text-align: center; font-weight: 400; font-size: 0.7em;
+		h5 { text-align: center; font-weight: 400; font-size: 0.7em; @include caps;
 			@media #{$phablet}{ font-size: 1em; }
 			@media #{$small}{ text-align: right; margin-right: 3em; }
 		}

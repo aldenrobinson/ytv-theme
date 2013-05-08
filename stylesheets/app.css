@@ -17,7 +17,7 @@ body {
   color: #333333;
   padding: 0;
   margin: 0;
-  font-family: "Libre Baskerville", Georgia, Times, serif;
+  font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -988,7 +988,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Libre Baskerville", Georgia, Times, serif;
+  font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #333333;
@@ -2581,7 +2581,9 @@ table {
     #siteheader #banner h5 {
       text-align: center;
       font-weight: 400;
-      font-size: 0.7em; }
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em; }
       @media only screen and (min-width: 40em) {
         #siteheader #banner h5 {
           font-size: 1em; } }
@@ -2625,7 +2627,7 @@ table {
         background: rgba(255, 255, 255, 0.5);
         color: #333;
         text-align: right;
-        font-family: "Libre Baskerville", Georgia, Times, serif; }
+        font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
         #wrapper #highlights .orbit-container .slidecaption h5 {
           text-transform: uppercase;
           letter-spacing: 0.1em;
