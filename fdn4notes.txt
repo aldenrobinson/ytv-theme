@@ -60,6 +60,7 @@ BEFORE SENDING TO MARY
 	x Style slide caption text a little more
 	x Create master padding for body area
 	x Fix text in news box
-	Inline and center footer menu
+	x Inline and center footer menu
 	Add credit
 	Resolve box shadow issue
+	Add some events
