@@ -81,9 +81,30 @@ require( get_template_directory() .'/inc/generic_sidebar.php' );
 	      'public' => true,
 	      'has_archive' => true,
 	      'rewrite' => array('slug' => 'programs'),
-	      'show_in_nav_menus' => true
+	      'show_in_nav_menus' => true,
+	      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' )
 	      )
 	  );
+	}
+
+	//add multiple post thumbnail support
+	if (class_exists('MultiPostThumbnails')) {
+		new MultiPostThumbnails(
+			array(
+				'label' => 'Second image',
+				'id' => 'second-image',
+				'post_type' => 'program'
+			)
+		);
+	}
+	if (class_exists('MultiPostThumbnails')) {
+		new MultiPostThumbnails(
+			array(
+				'label' => 'Third image',
+				'id' => 'third-image',
+				'post_type' => 'program'
+			)
+		);
 	}
 
 	add_action( 'init', 'create_video_post_type' );

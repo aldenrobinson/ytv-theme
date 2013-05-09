@@ -70,4 +70,12 @@ NEXT STEPS
 		x initialize sidebar
 		decide about rotating header?
 	style single-program.php
+		get meta boxes back
+			images for slideshow
+				use multiple featured images plugin
+			meta text box for description
+				instead, use the main page text
+			area for details/announcements
+				instead, use category from posts
+			meta text box for quote
 	style news page
