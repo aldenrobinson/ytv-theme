@@ -67,6 +67,7 @@ add_editor_style();
 //
 //generic sidebar
 require( get_template_directory() .'/inc/generic_sidebar.php' );
+//require( get_template_directory() .'/inc/programs_sidebar.php' );
 
 //all post types
 //require( get_template_directory() .'/inc/cpt.php' ); //FOR SOME REASON THIS BREAKS EVERYTHING.  PASTING CONTENTS BELOW.  BUT WHY?

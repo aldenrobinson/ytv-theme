@@ -2611,30 +2611,6 @@ table {
 #wrapper {
   background: ivory;
   box-shadow: 5px 5px 25px 5px rgba(220, 220, 220, 0.25); }
-  #wrapper #highlights {
-    width: 100%;
-    padding: 0; }
-    #wrapper #highlights .orbit-container {
-      width: 100%;
-      background: transparent; }
-      #wrapper #highlights .orbit-container .slidecaption {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 1em;
-        background: rgba(255, 255, 255, 0.8);
-        color: #333;
-        text-align: right;
-        font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
-        #wrapper #highlights .orbit-container .slidecaption h5 {
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          font-weight: 600; }
-          #wrapper #highlights .orbit-container .slidecaption h5 a {
-            color: #c83c3c; }
-        #wrapper #highlights .orbit-container .slidecaption a {
-          color: #333333; }
   #wrapper #content {
     padding: 3em; }
     @media only screen and (min-width: 40em) {
@@ -2656,6 +2632,31 @@ table {
             color: #c83c3c; }
         #wrapper #content #events-video .eventtab ul li p {
           color: #737373; }
+
+.banner-slideshow {
+  width: 100%;
+  padding: 0 !important; }
+  .banner-slideshow .orbit-container {
+    width: 100%;
+    background: transparent; }
+    .banner-slideshow .orbit-container .slidecaption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 1em;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      text-align: right;
+      font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica, sans-serif; }
+      .banner-slideshow .orbit-container .slidecaption h5 {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600; }
+        .banner-slideshow .orbit-container .slidecaption h5 a {
+          color: #c83c3c; }
+      .banner-slideshow .orbit-container .slidecaption a {
+        color: #333333; }
 
 aside ul {
   list-style-type: none; }

@@ -1,5 +1,5 @@
 <?php wp_enqueue_script('orbit'); ?>
-<ul id="highlights" data-orbit>
+<ul id="highlights-orbit" data-orbit>
 	<?php 
 		$events = EM_Events::get(array(
 			'orderby' => event_start_date,

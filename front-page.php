@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="row">
-	<div id="highlights" class="large-12 columns">
+	<div id="highlights" class="large-12 columns banner-slideshow">
 		<?php get_template_part('loop', 'highlights'); ?>
 	</div><!--soon-->
 </div><!--first front-page.php row-->
