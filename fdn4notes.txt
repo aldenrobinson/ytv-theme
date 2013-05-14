@@ -78,4 +78,8 @@ NEXT STEPS
 			x instead, use category from posts
 		meta text box for quote
 			wait on this and see if they can work it into the text
+	x  Style individual events pages
+		will do more when we have more events installed
+	x border for sidebar
 	style news page
+	add donate button to top bar, along with FB etc.

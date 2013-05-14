@@ -2632,6 +2632,8 @@ table {
             color: #c83c3c; }
         #wrapper #content #events-video .eventtab ul li p {
           color: #737373; }
+    #wrapper #content #index ul {
+      list-style-type: none; }
 
 .banner-slideshow {
   width: 100%;
@@ -2658,8 +2660,10 @@ table {
       .banner-slideshow .orbit-container .slidecaption a {
         color: #333333; }
 
-aside ul {
-  list-style-type: none; }
+aside {
+  border-left: 1px solid #f8f8c4; }
+  aside ul {
+    list-style-type: none; }
 
 #sitefooter {
   text-align: center;

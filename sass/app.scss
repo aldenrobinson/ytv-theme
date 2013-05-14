@@ -124,7 +124,9 @@ nav {}
 				}
 			}
 		}
-		#index {}
+		#index {
+			ul { list-style-type: none; }
+		}
 	}
 }
 
@@ -142,5 +144,6 @@ nav {}
 
 aside { 
 	ul {list-style-type: none;}
+	border-left: $border;
 }
 #sitefooter { text-align: center; margin: 3em 0; }
