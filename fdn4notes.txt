@@ -81,5 +81,8 @@ NEXT STEPS
 	x  Style individual events pages
 		will do more when we have more events installed
 	x border for sidebar
-	style news page
+	create news page
+		use block grid of feeds
+			
+	create events page
 	add donate button to top bar, along with FB etc.
