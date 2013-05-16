@@ -2629,6 +2629,8 @@ h6 {
     @media only screen and (min-width: 40em) {
       #wrapper #content #events-video {
         padding-left: 2em; } }
+    #wrapper #content #events-video .eventtab h5 {
+      font-size: 1em; }
     #wrapper #content #events-video .eventtab ul {
       list-style-type: none; }
       #wrapper #content #events-video .eventtab ul li {
