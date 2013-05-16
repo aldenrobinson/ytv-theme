@@ -1,6 +1,6 @@
 <?php wp_enqueue_script('section'); ?>
 <div class="section-container auto" data-section>
-	<section class="event-page-tab" id="concerts">
+	<section class="eventtab" id="concerts">
 		<p class="title" data-section-title><a href="#panel1">Concerts</a></p>
 		<div class="content" data-section-content>
 			<ul>
@@ -20,7 +20,7 @@
 			<a class="jump" href="#">See all &raquo;</a>
 		</div>
 	</section>
-	<section class="event-page-tab" id="festivals">
+	<section class="eventtab" id="festivals">
 		<p class="title" data-section-title><a href="#panel1">Festivals</a></p>
 		<div class="content" data-section-content>
 			<ul>
@@ -39,7 +39,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="event-page-tab" id="dances">
+	<section class="eventtab" id="dances">
 		<p class="title" data-section-title><a href="#panel2">Dances</a></p>
 		<div class="content" data-section-content>
 			<ul>
@@ -58,7 +58,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="event-page-tab" id="sessions">
+	<section class="eventtab" id="sessions">
 		<p class="title" data-section-title><a href="#panel3">Sessions &amp; Jams</a></p>
 		<div class="content" data-section-content>
 			<ul>
