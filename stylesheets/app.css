@@ -2520,6 +2520,12 @@ table {
   .f-dropdown.large {
     max-width: 800px; }
 
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4b4b46;
+  font-size: 0.9em; }
+
 .mountain-bg {
   min-height: 100%;
   background: url("../images/mountains3.png") no-repeat 0 100%;

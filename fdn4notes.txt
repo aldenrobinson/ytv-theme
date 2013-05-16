@@ -83,6 +83,5 @@ NEXT STEPS
 	x border for sidebar
 	create news page
 		use block grid of feeds
-			
 	create events page
 	add donate button to top bar, along with FB etc.
