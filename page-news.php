@@ -3,7 +3,7 @@
 		<div class="large-12 columns" id="content">
 			<ul class="large-block-grid-3">
 				<li>
-					<h6>Announcements</h6>
+					<a href="<?php bloginfo('url'); ?>/category/news/announcements/"><h6>Announcements</h6></a>
 					<?php 
 						$args = array( 'category_name' => 'announcements', 'posts_per_page' => 1 );
 						$announcementsquery = new WP_Query($args);
@@ -14,7 +14,7 @@
 					<?php endwhile; ?>
 				</li>
 				<li>
-					<h6>Performances</h6>
+					<a href="<?php bloginfo('url'); ?>/category/news/performances/"><h6>Performances</h6></a>
 					<?php 
 						$args = array( 'category_name' => 'performances', 'posts_per_page' => 1 );
 						$performancesquery = new WP_Query($args);
@@ -25,7 +25,7 @@
 					<?php endwhile; ?>
 				</li>
 				<li>
-					<h6>Classes</h6>
+					<a href="<?php bloginfo('url'); ?>/category/news/classes/"><h6>Classes</h6></a>
 					<?php 
 						$args = array( 'category_name' => 'classes', 'posts_per_page' => 1 );
 						$classesquery = new WP_Query($args);
@@ -36,7 +36,7 @@
 					<?php endwhile; ?>
 				</li>
 				<li>
-					<h6>Stories</h6>
+					<a href="<?php bloginfo('url'); ?>/category/news/stories/"><h6>Stories</h6></a>
 					<?php 
 						$args = array( 'category_name' => 'announcements', 'posts_per_page' => 1 );
 						$storiesquery = new WP_Query($args);
