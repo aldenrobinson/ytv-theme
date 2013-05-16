@@ -2650,6 +2650,13 @@ h6 {
         border: 0; }
       #wrapper #content #news li:last-child {
         border: 0; }
+      #wrapper #content #news li h5 {
+        margin-bottom: 0; }
+      #wrapper #content #news li time {
+        display: block;
+        text-align: right;
+        font-size: 0.8em;
+        margin: 0 0 0.5em 0; }
 
 .banner-slideshow {
   width: 100%;

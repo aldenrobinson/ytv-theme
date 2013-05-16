@@ -83,9 +83,10 @@ NEXT STEPS
 	x border for sidebar
 	create news page
 		x use block grid of feeds
-			add borders between columns
-			add dates below news posts
-			fix h6 in other instances
+			x add borders between columns
+			x add dates below news posts
+				done with <time pubdate> markup
+			x fix h6 in other instances
 			need to moretag articles
 			need to select which feeds appear here
 	create events page

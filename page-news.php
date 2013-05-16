@@ -8,9 +8,13 @@
 						$args = array( 'category_name' => 'announcements', 'posts_per_page' => 1 );
 						$announcementsquery = new WP_Query($args);
 						while ($announcementsquery->have_posts()) : $announcementsquery->the_post();
+						$date = get_the_date();
 					?>
 						<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
-						<?php the_content(); ?>
+						<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
+						<article>
+							<?php the_content(); ?>
+						</article>
 					<?php endwhile; ?>
 				</li>
 				<li>
@@ -19,9 +23,13 @@
 						$args = array( 'category_name' => 'performances', 'posts_per_page' => 1 );
 						$performancesquery = new WP_Query($args);
 						while ($performancesquery->have_posts()) : $performancesquery->the_post();
+						$date = get_the_date();
 					?>
 						<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
-						<?php the_content(); ?>
+						<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
+						<article>
+							<?php the_content(); ?>
+						</article>
 					<?php endwhile; ?>
 				</li>
 				<li>
@@ -30,9 +38,13 @@
 						$args = array( 'category_name' => 'classes', 'posts_per_page' => 1 );
 						$classesquery = new WP_Query($args);
 						while ($classesquery->have_posts()) : $classesquery->the_post();
+						$date = get_the_date();
 					?>
 						<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
-						<?php the_content(); ?>
+						<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
+						<article>
+							<?php the_content(); ?>
+						</article>
 					<?php endwhile; ?>
 				</li>
 				<li>
@@ -41,9 +53,13 @@
 						$args = array( 'category_name' => 'announcements', 'posts_per_page' => 1 );
 						$storiesquery = new WP_Query($args);
 						while ($storiesquery->have_posts()) : $storiesquery->the_post();
+						$date = get_the_date();
 					?>
 						<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
-						<?php the_content(); ?>
+						<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
+						<article>
+							<?php the_content(); ?>
+						</article>
 					<?php endwhile; ?>
 				</li>
 			</ul>
