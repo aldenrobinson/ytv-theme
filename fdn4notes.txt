@@ -82,7 +82,7 @@ NEXT STEPS
 		will do more when we have more events installed
 	x border for sidebar
 	create news page
-		use block grid of feeds
+		x use block grid of feeds
 			add borders between columns
 			need to moretag articles
 			need to select which feeds appear here
