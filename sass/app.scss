@@ -34,7 +34,7 @@
 // @import "foundation/components/labels";
 // @import "foundation/components/inline-lists";
 // @import "foundation/components/pagination";
-// @import "foundation/components/panels";
+@import "foundation/components/panels";
 // @import "foundation/components/pricing-tables";
 // @import "foundation/components/progress-bars";
 // @import "foundation/components/side-nav";
@@ -127,6 +127,9 @@ nav {}
 				h5 { margin-bottom: 0; }
 				time { display: block; text-align: right; font-size: 0.8em; margin: 0 0 0.5em 0; }
 			}
+		}
+		#event-submit { @include panel; 
+			.button { margin: auto; }
 		}
 	}
 }
