@@ -12,7 +12,7 @@
 					foreach ( $events as $event ) {
 				?>
 					<li>
-						<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+						<h5><?php echo $event->output('#_EVENTLINK') ?></h5>
 						<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 					</li>
 				<?php } ?>
@@ -32,7 +32,7 @@
 					foreach ( $events as $event ) {
 				?>
 					<li>
-						<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+						<h5><?php echo $event->output('#_EVENTLINK') ?></h5>
 						<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 					</li>
 				<?php } ?>
@@ -51,7 +51,7 @@
 					foreach ( $events as $event ) {
 				?>
 					<li>
-						<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+						<h5><?php echo $event->output('#_EVENTLINK') ?></h5>
 						<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 					</li>
 				<?php } ?>
@@ -70,7 +70,7 @@
 					foreach ( $events as $event ) {
 				?>
 					<li>
-						<h6><?php echo $event->output('#_EVENTLINK') ?></h6>
+						<h5><?php echo $event->output('#_EVENTLINK') ?></h5>
 						<p><?php echo $event->output('#_EVENTDATES') ?> @ <?php echo $event->output('#_LOCATIONNAME') ?></p>
 					</li>
 				<?php } ?>
