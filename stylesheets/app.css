@@ -2629,18 +2629,6 @@ h6 {
     @media only screen and (min-width: 40em) {
       #wrapper #content #events-video {
         padding-left: 2em; } }
-    #wrapper #content #events-video .eventtab h5 {
-      font-size: 1em; }
-    #wrapper #content #events-video .eventtab ul {
-      list-style-type: none; }
-      #wrapper #content #events-video .eventtab ul li {
-        margin: 1em 0; }
-        #wrapper #content #events-video .eventtab ul li h6 {
-          margin-bottom: 0.2em; }
-          #wrapper #content #events-video .eventtab ul li h6 a {
-            color: #c83c3c; }
-        #wrapper #content #events-video .eventtab ul li p {
-          color: #737373; }
     #wrapper #content #index ul {
       list-style-type: none; }
     #wrapper #content #news li {
@@ -2682,6 +2670,19 @@ h6 {
           color: #c83c3c; }
       .banner-slideshow .orbit-container .slidecaption a {
         color: #333333; }
+
+.eventtab h5 {
+  font-size: 1em; }
+.eventtab ul {
+  list-style-type: none; }
+  .eventtab ul li {
+    margin: 1em 0; }
+    .eventtab ul li h6 {
+      margin-bottom: 0.2em; }
+      .eventtab ul li h6 a {
+        color: #c83c3c; }
+    .eventtab ul li p {
+      color: #737373; }
 
 aside {
   border-left: 1px solid #f8f8c4; }

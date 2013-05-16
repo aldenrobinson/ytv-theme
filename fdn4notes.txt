@@ -87,7 +87,7 @@ NEXT STEPS
 			x add dates below news posts
 				done with <time pubdate> markup
 			x fix h6 in other instances
-			need to moretag articles
-			need to select which feeds appear here
+			x need to moretag articles
+			MARY need to select which feeds appear here
 	create events page
 	add donate button to top bar, along with FB etc.
