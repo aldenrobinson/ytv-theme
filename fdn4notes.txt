@@ -84,6 +84,8 @@ NEXT STEPS
 	create news page
 		x use block grid of feeds
 			add borders between columns
+			add dates below news posts
+			fix h6 in other instances
 			need to moretag articles
 			need to select which feeds appear here
 	create events page

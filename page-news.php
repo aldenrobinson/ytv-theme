@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="row">
 		<div class="large-12 columns" id="content">
-			<ul class="large-block-grid-3">
+			<ul class="large-block-grid-3" id="news">
 				<li>
 					<a href="<?php bloginfo('url'); ?>/category/news/announcements/"><h6>Announcements</h6></a>
 					<?php 
