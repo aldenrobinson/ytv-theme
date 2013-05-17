@@ -15,7 +15,7 @@
 						<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
 						<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
 						<article>
-							<?php the_content(); ?>
+							<?php the_content('more &raquo;'); ?>
 						</article>
 					<?php endwhile; ?>
 				</div>
@@ -36,7 +36,7 @@
 								<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
 								<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
 								<article>
-									<?php the_content(); ?>
+									<?php the_content('more &raquo;'); ?>
 								</article>
 							<?php endwhile; ?>
 						</li>
@@ -53,7 +53,7 @@
 								<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
 								<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
 								<article>
-									<?php the_content(); ?>
+									<?php the_content('more &raquo;'); ?>
 								</article>
 							<?php endwhile; ?>
 						</li>
@@ -70,7 +70,7 @@
 								<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
 								<time datetime="<?php echo date( 'Y-m-d', strtotime($date) ); ?>" pubdate><?php echo $date; ?></time>
 								<article>
-									<?php the_content(); ?>
+									<?php the_content('more &raquo;'); ?>
 								</article>
 							<?php endwhile; ?>
 						</li>
