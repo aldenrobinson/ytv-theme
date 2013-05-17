@@ -21,7 +21,7 @@
 		?>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
-	<?php if ( is_single('events') ) { ?>
+	<?php if ( is_page('events') ) { ?>
 		<div id="event-submit-popup" class="reveal-modal">
 			<h5>Submit an event</h5>
 				<?php echo do_shortcode('[contact-form-7 id="321" title="Submit an Event"]'); ?>

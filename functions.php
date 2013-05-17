@@ -38,7 +38,7 @@ function load_scripts() {
 	//Okay, now call those of the above registered scripts that you want to use throughout the site.  If you have one that will load on only one template, call it there instead. For example:
 	wp_enqueue_script('foundation'); 
 	wp_enqueue_script('app');
-	//wp_enqueue_script('reveal'); 
+	wp_enqueue_script('reveal'); 
 	//wp_enqueue_script('orbit'); 
 	//wp_enqueue_script('section'); 
 	//wp_enqueue_script('forms'); 
