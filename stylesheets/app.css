@@ -2580,6 +2580,10 @@ h6 {
 .orbit-prev, .orbit-next, .orbit-bullets, .orbit-timer, .orbit-slide-number {
   display: none; }
 
+.more-link {
+  display: block;
+  text-align: right; }
+
 #sitenav .dropdown a {
   background: ivory;
   padding: 15px; }
