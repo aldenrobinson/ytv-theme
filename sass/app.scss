@@ -120,7 +120,10 @@ nav {}
 		#index {
 			ul { list-style-type: none; }
 		}
-		#news {
+		#featured-news { margin: 0 0 1em; border-bottom: $border; 
+			p { font-size: emCalc(18px); }
+		}
+		#news-feeds {
 			li { padding: 0 1em; border-right: $border;
 				&:nth-child(3) { border: 0; }
 				&:last-child { border: 0; }

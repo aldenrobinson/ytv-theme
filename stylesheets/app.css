@@ -2674,16 +2674,21 @@ h6 {
         padding-left: 2em; } }
     #wrapper #content #index ul {
       list-style-type: none; }
-    #wrapper #content #news li {
+    #wrapper #content #featured-news {
+      margin: 0 0 1em;
+      border-bottom: 1px solid #f8f8c4; }
+      #wrapper #content #featured-news p {
+        font-size: 1.125em; }
+    #wrapper #content #news-feeds li {
       padding: 0 1em;
       border-right: 1px solid #f8f8c4; }
-      #wrapper #content #news li:nth-child(3) {
+      #wrapper #content #news-feeds li:nth-child(3) {
         border: 0; }
-      #wrapper #content #news li:last-child {
+      #wrapper #content #news-feeds li:last-child {
         border: 0; }
-      #wrapper #content #news li h5 {
+      #wrapper #content #news-feeds li h5 {
         margin-bottom: 0; }
-      #wrapper #content #news li time {
+      #wrapper #content #news-feeds li time {
         display: block;
         text-align: right;
         font-size: 0.8em;

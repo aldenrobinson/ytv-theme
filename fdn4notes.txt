@@ -88,6 +88,7 @@ NEXT STEPS
 				done with <time pubdate> markup
 			x fix h6 in other instances
 			x need to moretag articles
+			feature one article in the top of the news section
 			MARY need to select which feeds appear here
-	create events page
+	x create events page
 	add donate button to top bar, along with FB etc.
