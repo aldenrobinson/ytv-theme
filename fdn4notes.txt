@@ -80,6 +80,7 @@ NEXT STEPS
 			wait on this and see if they can work it into the text
 	x  Style individual events pages
 		will do more when we have more events installed
+		add sidebar with next five events?
 	x border for sidebar
 	create news page
 		x use block grid of feeds
@@ -88,7 +89,12 @@ NEXT STEPS
 				done with <time pubdate> markup
 			x fix h6 in other instances
 			x need to moretag articles
-			feature one article in the top of the news section
+			x feature one article in the top of the news section
 			MARY need to select which feeds appear here
 	x create events page
+
 	add donate button to top bar, along with FB etc.
+
+PREPARE FOR TRANSITION TO LIVE SERVER
+	install wp events manager safely on live server
+	
