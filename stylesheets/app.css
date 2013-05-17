@@ -2707,6 +2707,8 @@ h6 {
         #wrapper #content #event-submit h1.subheader, #wrapper #content #event-submit h2.subheader, #wrapper #content #event-submit h3.subheader, #wrapper #content #event-submit h4.subheader, #wrapper #content #event-submit h5.subheader, #wrapper #content #event-submit h6.subheader {
           line-height: 1.4; }
       #wrapper #content #event-submit .button {
+        display: block;
+        width: 90%;
         margin: auto; }
 
 .banner-slideshow {

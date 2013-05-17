@@ -129,7 +129,7 @@ nav {}
 			}
 		}
 		#event-submit { @include panel; 
-			.button { margin: auto; }
+			.button { display: block; width: 90%; margin: auto; }
 		}
 	}
 }
