@@ -96,5 +96,8 @@ NEXT STEPS
 	add donate button to top bar, along with FB etc.
 
 PREPARE FOR TRANSITION TO LIVE SERVER
-	install wp events manager safely on live server
+	x install wp events manager safely on live server
+	proof on IE and mobile
 	
+Make ss for programs pages
+think about other content types for slider
