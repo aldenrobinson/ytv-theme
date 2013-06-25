@@ -12,13 +12,15 @@
 		<?php wp_enqueue_script('section'); ?>
 	 	<div class="section-container auto" data-section>
 			<section class="eventtab" id="concerts">
-				<p class="title" data-section-title><a href="#panel1">Concerts</a></p>
-				<div class="content" data-section-content>
+				<p class="title" data-section-title><a href="#panel0">Concerts</a></p>
+				<div class="content equal_height" data-section-content>
 					<ul>
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 19 
+								'category' => 19, 
+								'limit' => 10,
+								'pagination' => 1
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -28,17 +30,19 @@
 							</li>
 						<?php } ?>
 					</ul>
-					<a class="jump" href="#">See all &raquo;</a>
+					<a class="jump" href="events/#concerts">See all &raquo;</a>
 				</div>
 			</section>
 			<section class="eventtab" id="festivals">
 				<p class="title" data-section-title><a href="#panel1">Festivals</a></p>
-				<div class="content" data-section-content>
+				<div class="content equal_height" data-section-content>
 					<ul>
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 22
+								'category' => 22,
+								'limit' => 10,
+								'pagination' => 1
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -48,16 +52,19 @@
 							</li>
 						<?php } ?>
 					</ul>
+					<a class="jump" href="events/#festivals">See all &raquo;</a>
 				</div>
 			</section>
 			<section class="eventtab" id="dances">
 				<p class="title" data-section-title><a href="#panel2">Dances</a></p>
-				<div class="content" data-section-content>
+				<div class="content equal_height" data-section-content> 
 					<ul>
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 20
+								'category' => 20,
+								'limit' => 10,
+								'pagination' => 1
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -67,16 +74,19 @@
 							</li>
 						<?php } ?>
 					</ul>
+					<a class="jump" href="events/#dances">See all &raquo;</a>
 				</div>
 			</section>
 			<section class="eventtab" id="sessions">
 				<p class="title" data-section-title><a href="#panel3">Sessions &amp; Jams</a></p>
-				<div class="content" data-section-content>
+				<div class="content equal_height" data-section-content>
 					<ul>
 						<?php 
 							$events = EM_Events::get(array(
 								'orderby' => event_start_date,
-								'category' => 30
+								'category' => 30,
+								'limit' => 10,
+								'pagination' => 1
 							));
 							foreach ( $events as $event ) {
 						?>
@@ -86,6 +96,7 @@
 							</li>
 						<?php } ?>
 					</ul>
+					<a class="jump" href="events/#sessions">See all &raquo;</a>
 				</div>
 			</section>
 		</div><!--section container--> 

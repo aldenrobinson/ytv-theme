@@ -66,7 +66,7 @@ $border: 1px solid $darkpaper;
 	//headers
 	h6 { @include caps; color: $brightred; font-size: 0.8em; font-weight: normal; }
 	//mountains
-	.mountain-bg { min-height: 100%; background: url('../images/mountains3.png') no-repeat 0 100%; background-size: contain; background-attachment: fixed; box-shadow: inset 0 0 25px rgba(150,150,150,0.5); }
+	.mountain-bg { min-height: 100%; background: url('../images/mountains3.png') no-repeat 0 100%; background-size: contain; background-attachment: fixed; /*box-shadow: inset 0 0 25px rgba(150,150,150,0.5);*/ }
 
 	//orbit
 	.orbit-prev, .orbit-next, .orbit-bullets, .orbit-timer, .orbit-slide-number { display: none; }
@@ -79,8 +79,9 @@ $border: 1px solid $darkpaper;
 
 //MODULE STYLES
 //Styling of standalone modules with multiple instances, e.g. panel styles, form styles, navbar styles.
-#sitenav {
+#sitenav { box-shadow: 0px 1px 25px 5px rgba(220,220,220,0.25);
 	.dropdown a { background: $paper; padding: 15px; }
+	a.button { color: $lightpaper; }
 	a:not(.button):hover { background: $darkpaper; }
 	section>ul>li>a:not(.button) { @include caps; }	
 }
@@ -111,7 +112,8 @@ $border: 1px solid $darkpaper;
 }
 nav {}
 #wrapper { background: $paper; @include mainshadow;
-	#content { padding: 3em; 
+	#content { padding: 2em 1em;
+		@media #{$small}{ padding: 3em; }
 		#news-programs { 
 			@media #{$phablet} { padding-right: 2em; border-right: $border;  }
 			#front-news { border-bottom: $border; }
@@ -162,8 +164,23 @@ nav {}
 		}
 	}
 }
-aside { 
-	ul {list-style-type: none;}
-	border-left: $border;
+aside { margin-top: 2em; padding-top: 2em; border-top: $border; 
+	ul { list-style-type: none;} 
+	@media #{$small}{
+		margin-top: 0;
+		padding-top: 0;
+		border-top: 0;
+		border-left: $border;
+	}
 }
-#sitefooter { text-align: center; margin: 3em 0; }
+#sitefooter { text-align: center; margin: 3em 0; 
+	nav {
+		ul { list-style-type: none;
+			li { display: block;
+				@media #{$small} { display: inline; padding: 0 1em; border-right: 1px solid $brightred; 
+					&:last-child { border: 0; }
+				}
+			}
+		}
+	}
+}

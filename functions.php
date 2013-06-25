@@ -39,9 +39,9 @@ function load_scripts() {
 	wp_enqueue_script('foundation'); 
 	wp_enqueue_script('app');
 	wp_enqueue_script('reveal'); 
-	//wp_enqueue_script('orbit'); 
-	//wp_enqueue_script('section'); 
-	//wp_enqueue_script('forms'); 
+	//wp_enqueue_script('orbit'); ENQUEUED CONTEXTUALLY
+	//wp_enqueue_script('section'); ENQUEUED CONTEXTUALLY
+	wp_enqueue_script('forms'); 
 	wp_enqueue_script('topbar');
 	}
 
@@ -67,6 +67,7 @@ add_editor_style();
 //
 //generic sidebar
 require( get_template_directory() .'/inc/generic_sidebar.php' );
+require( get_template_directory() .'/inc/news_sidebar.php' );
 //require( get_template_directory() .'/inc/programs_sidebar.php' );
 
 //all post types

@@ -7,7 +7,12 @@
 
 		<section class="top-bar-section">
 			<?php foundation_top_bar_l(); ?>
-			<?php foundation_top_bar_r(); ?>
+			<ul class="right">
+				<li class="separator"></li>
+				<li class="has-form">
+					<a class="small button" href="support-us">Support Us</a>
+				</li>
+			</ul>
 		</section>
 	</nav>
 </div>

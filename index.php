@@ -4,7 +4,11 @@
 			<div class="row">
 				<?php 
 					get_template_part('loop', 'index');
-					get_sidebar('generic');
+					if (in_category('news')) {
+						get_sidebar('news');
+					} else {
+						get_sidebar('generic');
+					}
 				?>
 			</div>
 		</div>

@@ -4,9 +4,14 @@
 	<div class="row">
 		<footer id="sitefooter">
 			<nav>
-				<?php //wp_nav_menu('footer'); ?>
+				<?php wp_nav_menu( 
+					array(
+						'menu' => 'footer',
+						'depth' => 1
+					)
+				); ?>
 			</nav>
-			<p>Copyright &copy; 2013.  Site by <a href="http://aldenrobinson.net">YOUR NAME HERE</a>.</p>
+			<p>Copyright &copy; 2013.  Site by <a href="http://aldenrobinson.net">Alden Robinson</a>.</p>
 			<a href="#" class="secondary small button" data-reveal-id="contact-popup">Contact Us</a>
 		</footer>
 	</div>
