@@ -3,7 +3,7 @@
 	<?php 
 		$events = EM_Events::get(array(
 			'orderby' => event_start_date,
-			'category' => 22
+			'category' => 103 
 		));
 		foreach ( $events as $event ) {
 	?>
