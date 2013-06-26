@@ -124,22 +124,6 @@ require( get_template_directory() .'/inc/news_sidebar.php' );
 	      )
 	  );
 	}
-	add_action( 'init', 'create_highlight_post_type' );
-	function create_highlight_post_type() {
-	  register_post_type( 'highlight',
-	    array(
-	      'labels' => array(
-			      'name' => __( 'Highlights' ),
-			      'singular_name' => __( 'Highlight' )
-			  ),
-	      'public' => true,
-	      'has_archive' => true,
-	      'rewrite' => array('slug' => 'highlights'),
-	      'show_in_nav_menus' => true,
-	      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' )
-	      )
-	  );
-	}
 
 //front slide meta boxes
 //require( get_template_directory() .'/inc/front_slide_meta_box.php' );
