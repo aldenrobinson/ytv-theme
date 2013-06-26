@@ -10,7 +10,7 @@
 			<ul class="right">
 				<li class="separator"></li>
 				<li class="has-form">
-					<a class="small button" href="support-us">Support Us</a>
+				<a class="small button" href="<?php bloginfo('url') ?>/support-us">Support Us</a>
 				</li>
 			</ul>
 		</section>
