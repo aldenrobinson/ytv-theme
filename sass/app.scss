@@ -169,8 +169,18 @@ nav {}
 		}
 	}
 }
+.events { list-style-type: none;
+	li { margin: 2em 0;
+		p { margin: 0; }
+	}
+}
+#em-wrapper {
+	select { margin: 0.25em 0; }
+	input[type="submit"] { @include button( $padding: $button-sml ); margin: 1em 0; }
+}
 aside { margin-top: 2em; padding-top: 2em; border-top: $border; 
 	ul { list-style-type: none;} 
+	.button { @include button( $bg: $secondary-color); color: $body-font-color;}
 	@media #{$small}{
 		margin-top: 0;
 		padding-top: 0;

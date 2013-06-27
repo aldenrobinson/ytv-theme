@@ -1,11 +1,11 @@
 <?php
 
 // Register Sidebar
-function news_sidebar()  {
+function events_sidebar()  {
 	$args = array(
-		'id'            => 'news',
-		'name'          => __( 'News Sidebar'),
-		'description'   => __( 'News Sidebar'),
+		'id'            => 'events',
+		'name'          => __( 'Events Sidebar'),
+		'description'   => __( 'Events Sidebar'),
 		'before_title'  => '<h6 class=\"widgettitle\">',
 		'after_title'   => '</h6>',
 		'before_widget' => '<li id=\"%1$s\" class=\"widget %2$s\">',
@@ -15,6 +15,6 @@ function news_sidebar()  {
 	register_sidebar( $args );
 }
 
-add_action( 'widgets_init', 'news_sidebar' );
+add_action( 'widgets_init', 'events_sidebar' );
 
 ?>

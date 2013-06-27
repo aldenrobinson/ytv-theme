@@ -6,6 +6,8 @@
 					get_template_part('loop', 'index');
 					if (in_category('news')) {
 						get_sidebar('news');
+					} elseif (is_page('events')) {
+						get_sidebar('events');
 					} else {
 						get_sidebar('generic');
 					}

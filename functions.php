@@ -68,6 +68,7 @@ add_editor_style();
 //generic sidebar
 require( get_template_directory() .'/inc/generic_sidebar.php' );
 require( get_template_directory() .'/inc/news_sidebar.php' );
+require( get_template_directory() .'/inc/events_sidebar.php' );
 //require( get_template_directory() .'/inc/programs_sidebar.php' );
 
 //all post types

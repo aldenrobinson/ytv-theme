@@ -34,7 +34,7 @@ $body-font-family: "Quattrocento Sans", "Open Sans", "Helvetica Neue", Helvetica
 
 // We use these as default colors throughout
 $primary-color: $brightred;
-// $secondary-color: #e9e9e9;
+$secondary-color: lighten($brightred, 40%);
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
