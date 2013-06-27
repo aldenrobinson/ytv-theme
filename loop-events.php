@@ -191,7 +191,7 @@
 		</div>
 	</section>
 	<section class="eventtab">
-		<p class="title" data-section-title><a href="#sessions">For families</a></p>
+		<p class="title" data-section-title><a href="#sessions">For Families</a></p>
 		<div class="content " data-section-content data-slug="sessions">
 			<ul>
 				<?php 
