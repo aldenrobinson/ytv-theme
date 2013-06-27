@@ -18,6 +18,8 @@
 
 			$programsidequery = new WP_Query($programsideargs);
 			while ( $programsidequery -> have_posts() ) : $programsidequery->the_post(); 
+			global $more;
+			$more = 0;
 		?>
 			<li>
 				<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
