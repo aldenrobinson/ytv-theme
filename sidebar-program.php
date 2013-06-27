@@ -11,7 +11,7 @@
 			
 			$programsideargs = array ( 
 				'category_name' => $cat,
-				'posts_per_page' => 5,
+				'posts_per_page' => 3,
 				'orderby' => DATE,
 				'order' => 'DESC'
 			);
