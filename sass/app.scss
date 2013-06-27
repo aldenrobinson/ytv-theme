@@ -74,6 +74,11 @@ $border: 1px solid $darkpaper;
 	//more link
 	.more-link { display: block; text-align: right; }
 
+	//MCE styles
+	.alignleft { float: left; text-align: left; }
+	.alignright { float: right; text-align: right; }
+	.aligncenter { margin: auto; text-align: center; }
+
 //LAYOUT STYLES
 //Styling pertaining to the layout of the page, esp. Foundation grid mixins.
 
