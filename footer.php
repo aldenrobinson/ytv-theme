@@ -22,7 +22,7 @@
 	<div id="contact-popup" class="reveal-modal">
 		<h5>Contact Us</h5>
 		<?php //Change this to the shortcode you get from the Contact Form 7 plugin.
-			echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); 
+			echo do_shortcode('[contact-form-7 id="319" title="Contact Us Page Form"]'); 
 		?>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
