@@ -26,16 +26,14 @@
 
 	<div class="row">
 		<header id="siteheader">
-			<div class="row">
 
-				<div id="banner">
-				  <a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
-				  <h5><?php bloginfo('description'); ?></h5>
-				</div>
-
-				<div id="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory') ?>/images/random/rotate.php?=1234" /></a></div>
-				
+			<div id="banner">
+			  <a href="<?php bloginfo('url'); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+			  <h5><?php bloginfo('description'); ?></h5>
 			</div>
+
+			<div id="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory') ?>/images/random/rotate.php?=1234" /></a></div>
+			
 		</header>
 	</div>
 
