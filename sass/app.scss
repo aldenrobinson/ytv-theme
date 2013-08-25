@@ -151,7 +151,7 @@ nav {}
 .banner-slideshow { width: 100%; padding: 0!important; 
 	.orbit-container { width: 100%; background: transparent;
 		.slidecaption { position: absolute; left: 0; bottom: 0; width: 100%; padding: 1em; background: rgba($lightpaper, 0.8); color: #333; text-align: right; font-family: $header-font-family;
-			h5 { @include caps; font-weight: 600; 
+			h5 { @include caps; font-weight: normal; 
 				a { color: $primary-color; }
 			}
 			a { color: $body-font-color; }

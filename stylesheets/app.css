@@ -2758,7 +2758,7 @@ h6 {
       .banner-slideshow .orbit-container .slidecaption h5 {
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        font-weight: 600; }
+        font-weight: normal; }
         .banner-slideshow .orbit-container .slidecaption h5 a {
           color: #c83c3c; }
       .banner-slideshow .orbit-container .slidecaption a {
