@@ -1955,7 +1955,7 @@ small.error {
       color: #c83c3c;
       text-transform: uppercase;
       font-size: 0.8125em;
-      font-weight: bold;
+      font-weight: normal;
       position: relative;
       display: block;
       padding: 0 15px;
