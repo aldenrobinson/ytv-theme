@@ -99,7 +99,7 @@ $border: 1px solid $darkpaper;
 		@media #{$phablet}{ @include grid-column(10); }
 		h1 { font-family: 'DARLINGRegular',sans-serif; @include caps; font-size: emCalc(30px); text-align: center; font-weight: 100; margin: 0;
 			@media #{$phablet}{}
-			@media #{$small}{ font-size: emCalc(38px); text-align: right; }
+			@media #{$small}{ font-size: emCalc(34px); text-align: right; }
 			@media #{$medium}{ font-size: emCalc(44px); }
 			@media #{$large}{ font-size: emCalc(48px); }
 		}
