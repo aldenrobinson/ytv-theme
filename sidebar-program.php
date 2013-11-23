@@ -8,6 +8,7 @@
 			elseif ( is_single ('young-tradition-weekend') ) { $cat = "young-tradition-weekend"; }
 			elseif ( is_single ('fiddleheads') ) { $cat = "fiddleheads"; }
 			elseif ( is_single ('tom-sustic-fund') ) { $cat = "tom-sustic-fund"; }
+			elseif ( is_single ('instrument-petting-zoo') ) { $cat = "instrument-petting-zoo"; }
 			
 			$programsideargs = array ( 
 				'category_name' => $cat,
