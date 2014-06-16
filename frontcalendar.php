@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="large-8 columns">
 		<h4><a href="<?php bloginfo('url'); ?>/events">Calendar of Events</a></h4>
-		<p>This is your gateway to folk, traditional and roots music and dance events in Burlington and surrounding communities.  Click the calendar icon for a complete listing.  Join our mailing list for weekly updates.</p>
+		<p>This is your gateway to folk, traditional and roots music and dance events in Burlington and surrounding communities.  Click the calendar icon for a complete listing. </p>
 	</div>
 	<div class="large-4 columns">
 		<a href="<?php bloginfo('url'); ?>/events"><img src="<?php bloginfo('template_directory'); ?>/images/cal_icon.png" /></a><br /><br />
